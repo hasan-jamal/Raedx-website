@@ -423,8 +423,9 @@
         max-width: calc(100% - 0px);
     }
     .homeS2-container{padding: 0 20px;}
-    .fxCardsPrice{width:100%;gap: 24px;margin-top: 32px;}
+    .fxCardsPrice{width:90%;gap: 24px;margin: auto;margin-top: 32px;margin-bottom: 100px;}
     .cardPrice.active{transform: scale(1);}
+    .cardPrice{border-radius: 15px;}
     .cardPrice.active:hover{transform: scale(1);}
     .cardPrice .divBtn{    margin-top: 24px;margin-bottom: 24px;padding-bottom: 24px;}
     .cardPrice .fxListPrice{gap: 12px;}
