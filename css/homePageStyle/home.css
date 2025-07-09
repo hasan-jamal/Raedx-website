@@ -1,0 +1,821 @@
+.homeS1{
+    padding-top: 90px;
+    padding-bottom: 143px;
+    position: relative;
+    overflow: hidden;
+}
+.homeS1 .topRight{
+    top:-10rem;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.homeS1 .leftBottom{
+    right: 0;
+    bottom: -50rem;
+    position: absolute;
+    z-index: -1;
+}
+.homeS1 .fxHomeS1 .linearStars{
+    width: 79px;
+    height: 79px;    
+    object-fit: contain;
+    margin-right: auto;
+    display: block;
+    top: 1rem;
+    position: relative;
+}
+.homeS1 .fxHomeS1 h1{
+    font-size: 96px;
+    letter-spacing: -1.056px; 
+    margin-bottom: 60px;
+}
+.homeS1 .fxHomeS1 h1 span{opacity: 0.5;}
+.homeS1 .fxHomeS1 form{
+    padding: 15px 25px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    background: rgba(0, 199, 177, 0.20);
+    gap: 1rem;
+}
+.homeS1 .fxHomeS1 form input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.homeS1 .fxHomeS1 form input::placeholder{
+    opacity: 1;
+    color: #fff;
+}
+.homeS1 .fxHomeS1 form button{
+    width: max-content;
+    white-space: pre;
+    height: 44px;
+    padding: 0 23px;
+    gap: 10px;
+}
+.homeS1 .fxHomeS1 p{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.homeS1 .fxHomeS1 .divLogos h5{
+    margin-bottom: 32px;
+    font-family: 'Montserrat-Arabic';
+    font-weight: 700;
+}
+.homeS1 .fxHomeS1 .divLogos .fxLogos{
+    gap: 42px;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.homeS1 .fxHomeS1 .divLogos .fxLogos img{opacity: 0.7;width: 121.3px;object-fit: contain;}
+@media (min-width:1706.67px) {
+    .homeS1 .fxHomeS1 .divLogos .fxLogos img{width: 135px;}
+    .homeS1 .fxHomeS1 form{padding: 20px 30px;}
+    .homeS1 .fxHomeS1 form button{height: 50px;}
+    .homeS1 .fxHomeS1 h1{font-size: 110px;}
+}
+@media (min-width:1920px) {
+    .homeS1 .fxHomeS1 .divLogos .fxLogos img{width: 145px;}
+    .homeS1 .fxHomeS1 form{padding: 25px 35px;}
+    .homeS1 .fxHomeS1 form button{height: 60px;}
+    .homeS1 .fxHomeS1 h1{font-size: 120px;}
+}
+@media (min-width:2048px) {
+    .homeS1 .fxHomeS1 .divLogos .fxLogos img{width: 155px;}
+    .homeS1 .fxHomeS1 h1{font-size: 130px;}
+}
+@media (max-width:1396.36px) {
+    .homeS1{padding-top:80px;padding-bottom: 123px;}
+    .homeS1 .fxHomeS1 h1{font-size: 86px;margin-bottom: 50px;}
+    .homeS1 .fxHomeS1 p{margin-bottom: 60px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{gap: 36px;}
+}
+@media (max-width:1228.8px) {
+    .homeS1{padding-top:60px;padding-bottom: 103px;}
+    .homeS1 .fxHomeS1 h1{font-size: 66px;margin-bottom: 40px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{width: 90%;}
+    .homeS1 .fxHomeS1 p{margin-bottom: 40px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{gap: 32px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos img{width: 100px;}
+    .homeS1 .fxHomeS1 form input{font-size: 20px;}
+}
+@media (max-width:1024px) {
+    .homeS1{padding-top:50px;padding-bottom: 93px;}
+    .homeS1 .fxHomeS1 h1{font-size: 56px;margin-bottom: 32px;}
+    .homeS1 .fxHomeS1 form{width: 80%;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{width: 100%;}
+    .homeS1 .fxHomeS1 p{margin-bottom: 32px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{gap: 24px;}
+    .homeS1 .fxHomeS1 .linearStars{width: 60px;height: 60px;}
+    .homeS1 .fxHomeS1 form button{padding: 0 16px;height: 40px;}
+    .homeS1 .fxHomeS1 form input{font-size: 1rem;}
+}
+@media (max-width:877.71px) {
+    .homeS1 .fxHomeS1 form button{padding: 0 12px;height: 35px;}
+}
+@media (max-width:614.4px) {
+    .homeS1 .fxHomeS1 form{width: 100%;padding: 8px 12px;}
+    .homeS1 .fxHomeS1 .divLogos .fxLogos{gap: 1rem;}
+    .homeS1 .fxHomeS1 h1{font-size: 33px;line-height: 150%;}
+    .homeS1 .fxHomeS1 .linearStars{width: 50px ;height: 50px;top: 0;margin-bottom: 1rem;}
+    .homeS1 .fxHomeS1 form button{gap: 4px;}
+    .homeS1 .leftBottom {bottom: -20rem;width: 100%;}
+    .homeS1 .topRight {top: -10rem;width: 100%;}
+}
+/* Home Section 2 */
+.homeS2 .homeS2-container{
+    padding-right: 147px;
+}
+.homeS2 .fxHomeS2{
+    align-items: center;
+}
+.homeS2 .fxHomeS2 .divText{
+    width: 60%;
+}
+.homeS2 .fxHomeS2 .divImage{width: 40%;}
+.homeS2 .fxHomeS2 .divImage img{width: 100%;}
+.homeS2 .fxHomeS2 .divText h1{
+    font-size: 78px;
+    letter-spacing: -0.858px;
+    margin-bottom: 1rem;
+}
+.homeS2 .fxHomeS2 .divText p{
+    line-height: 111%;
+    letter-spacing: -0.22px;
+    color: rgba(255, 255, 255, 0.70);
+}
+.homeS2 .fxHomeS2 .divText .lastDiv{
+    gap: 32px;
+    margin-top: 1.5rem;
+}
+.homeS2 .fxHomeS2 .divText .lastDiv .btnLinear{
+    gap: 10px;
+}
+.homeS2 .fxHomeS2 .divText h1 span{
+    position: relative;
+}
+.homeS2 .fxHomeS2 .divText h1 span:after{
+    width: 85%;
+    position: absolute;
+    left: 55%;
+    top:45%;
+    transform: translate(-50%,-50%);
+    content: "";
+    height: 5px;
+    border-radius: 20px;
+    background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);
+}
+@media (min-width:1706.67px) {
+    .homeS2 .homeS2-container{padding-right: 167px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 85px;}
+}
+@media (min-width:1920px) {
+    .homeS2 .homeS2-container{padding-right: 187px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 95px;}
+    .homeS2 .fxHomeS2 .divText .lastDiv{margin-top: 2rem;}
+    .homeS2 .fxHomeS2 .divText p{line-height: 140%;}
+}
+@media (min-width:2048px) {
+    .homeS2 .homeS2-container{padding-right: 220px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 105px;}
+}
+@media (max-width:1396.36px) {
+    .homeS2 .homeS2-container{padding-right: 127px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 72px;}
+}
+@media (max-width:1228.8px) {
+    .homeS2 .homeS2-container{padding-right: 100px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 64px;}
+}
+@media (max-width:1024px) {
+    .homeS2 .homeS2-container{padding-right: 80px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 56px;}
+    .homeS2 .fxHomeS2 .divText .lastDiv{gap: 24px;}
+}
+@media (max-width:877.71px) {
+    .homeS2 .homeS2-container{padding-right: 50px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 48px;}
+}
+@media (max-width:768px) {
+    .homeS2 .homeS2-container{padding-right: 30px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 40px;}
+}
+@media (max-width:614.4px) {
+    .homeS2{margin: 48px 0;}
+    .homeS2 .homeS2-container{padding:0px;}
+    .homeS2 .fxHomeS2 .divText h1{font-size: 33px;}
+    .homeS2 .fxHomeS2{flex-direction: column;gap: 1rem;}
+    .homeS2 .fxHomeS2 .divText{width: 100%; padding: 0 20px;}
+    .homeS2 .fxHomeS2 .divImage{width: 100%;}
+    .homeS2 .fxHomeS2 .divText p{line-height: 140%;}
+    .homeS2 .fxHomeS2 .divText .lastDiv{gap: 1rem;}
+}
+/* Home Section 3 Style */
+.homeS3 .divTabs{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6.000000476837158px);
+    padding: 4px;
+    width: max-content;
+    margin: auto;
+    gap: 4px;
+    margin-top: 40px;
+}
+.homeS3 .divTabs button{
+    height: 36px;
+    padding: 0 25px;
+    background: none;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.homeS3 .divTabs button.active,
+.homeS3 .divTabs button:hover{
+    color: #FFF;
+    background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);
+}
+.fxCardsPrice{
+    gap: 40px;
+    width: 75%;
+    margin: auto;
+    align-items: normal;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+.fxCardsPrice .cardFlexStyle{
+    flex: 1 1 calc(33.3% - 40px);
+    max-width: calc(33.3% - 0px);
+}
+.cardPrice{
+    padding: 40px;
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+}
+.cardPrice.active,
+.cardPrice:hover{
+    border-radius: 32px;
+    border: 3px solid #2BFFFF;
+    background: linear-gradient(180deg, rgba(43, 255, 255, 0.12) 0%, rgba(43, 255, 255, 0.04) 50%, rgba(43, 255, 255, 0.07) 100%);
+    backdrop-filter: blur(42px);
+    transform: scale(1.1);
+}
+.cardPrice:hover{
+    transform: scale(1);
+    padding: 32px;
+}
+.cardPrice.active:hover{
+    transform: scale(1.1);
+}
+.cardPrice.active .divBtn button{
+    border-radius: 8px;
+    background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);
+    font-weight: 700;
+}
+.cardPrice .boxCircle{margin-bottom: 1.5rem;}
+.cardPrice .boxCircle img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.cardPrice h2{margin-bottom: 4px;}
+.cardPrice .fxPrice{gap: 9px;margin-top: 32px;}
+.cardPrice .fxPrice h1{
+    font-family: 'Montserrat-Arabic';
+    font-weight: 500;
+}
+.cardPrice .fxPrice span{
+    font-family: 'Montserrat-Arabic';
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.80);
+}
+.cardPrice .pHead,
+.cardPrice .fxPrice span,
+.cardPrice .fxListPrice .itemListPrice p{
+    font-size: 14px;
+}
+.cardPrice .divBtn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    position: relative;
+    z-index: 1; 
+}
+.cardPrice .divBtn button{
+    border-radius: 12px;
+    width: 100%;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.cardPrice .divBtn button:hover{
+    transform: scale(0.98);
+    background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);
+    font-weight: 700; 
+}
+.cardPrice .divBtn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.0)
+    );
+    z-index: -1; 
+  }
+  .cardPrice .fxListPrice{
+    gap: 1rem;
+  }
+  .cardPrice .fxListPrice .itemListPrice{gap: 8px;}
+  .cardPrice .fxListPrice .itemListPrice p{
+    color: rgba(255, 255, 255, 0.80);
+  }
+  @media (min-width:1706.67px) {
+    .cardPrice .pHead,
+    .cardPrice .fxPrice span,
+    .cardPrice .fxListPrice .itemListPrice p{
+        font-size: 16px;
+    }
+    .cardPrice{padding: 50px;}
+    .cardPrice .boxCircle svg{width: 45px;height: 45px;}
+  }
+@media (min-width:1920px) {
+    .cardPrice .pHead,
+    .cardPrice .fxPrice span,
+    .cardPrice .fxListPrice .itemListPrice p{
+        font-size: 18px;
+    }
+    .cardPrice{padding: 55px;}
+    .cardPrice .boxCircle svg{width: 50px;height: 50px;}
+    .cardPrice .boxCircle{margin-bottom: 2rem;}
+}
+@media (min-width:2048px) {
+    .cardPrice .pHead,
+    .cardPrice .fxPrice span,
+    .cardPrice .fxListPrice .itemListPrice p{
+        font-size: 20px;
+    }
+    .cardPrice .boxCircle svg{width: 55px;height: 55px;}
+}
+@media (min-width:2304px) {}
+@media (min-width:3072px) {}
+@media (max-width:1396.36px) {
+    .cardPrice{padding: 32px;}
+    .fxCardsPrice{width: 75%;}
+}
+@media (max-width:1228.8px) {
+    .cardPrice{padding: 24px;}
+    .fxCardsPrice{width: 80%;}
+    .cardPrice .fxPrice{margin-top: 24px;}
+    .cardPrice .divBtn{    margin-top: 32px;margin-bottom: 32px;padding-bottom: 32px;}
+    .cardPrice .fxListPrice{gap: 12px;}
+    .cardPrice .boxCircle{margin-bottom: 1rem;}
+    .cardPrice .pHead,
+    .cardPrice .fxPrice span,
+    .cardPrice .fxListPrice .itemListPrice p{font-size: 12px;}
+}
+@media (max-width:1024px) {
+    .fxCardsPrice{width: 90%;gap: 32px;}
+    .fxCardsPrice .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 32px);
+        max-width: calc(33.3% - 0px);
+    }
+    .cardPrice .fxPrice{margin-top: 1rem;}
+    .cardPrice .divBtn{    margin-top: 24px;margin-bottom: 24px;padding-bottom: 24px;}
+    .cardPrice .pHead,
+    .cardPrice .fxPrice span,
+    .cardPrice .fxListPrice .itemListPrice p{font-size: 11px;}
+}
+@media (max-width:877.71px) {
+    .cardPrice .divBtn{    margin-top: 1rem;margin-bottom: 1rem;padding-bottom: 1rem;}
+    .cardPrice .boxCircle{margin-bottom: 12px;}
+    .cardPrice .fxListPrice{gap: 8px;}
+    .fxCardsPrice{width: 95%;gap: 24px;}
+    .fxCardsPrice .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 24px);
+        max-width: calc(33.3% - 0px);
+    }
+}
+@media (max-width:768px) {
+    .fxCardsPrice .cardFlexStyle{
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 0px);
+    }
+}
+@media (max-width:614.4px) {
+    .fxCardsPrice .cardFlexStyle{
+        flex: 1 1 calc(100% - 24px);
+        max-width: calc(100% - 0px);
+    }
+    .homeS2-container{padding: 0 20px;}
+    .fxCardsPrice{width:100%;gap: 24px;margin-top: 32px;}
+    .cardPrice.active{transform: scale(1);}
+    .cardPrice.active:hover{transform: scale(1);}
+    .cardPrice .divBtn{    margin-top: 24px;margin-bottom: 24px;padding-bottom: 24px;}
+    .cardPrice .fxListPrice{gap: 12px;}
+    .cardPrice .boxCircle{margin-bottom: 20px;}
+}
+@media (max-width:512px) {}
+
+/* Home Section 4 Style */
+.homeS4{margin-bottom: 100px;}
+.homeS4 .fxGeneral{
+    gap: 93px;
+    align-items: normal;
+    margin-top: 54px;
+    margin-bottom: 32px;
+}
+.fxCardsTeam .cardFlexStyle{
+    flex: 1 1 calc(33.3% - 93px);
+    max-width: calc(33.3% - 0px);
+}
+.cardUser{
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.cardUser .userImage{
+    width: 86px;
+    height: 86px;
+    border-radius: 86px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+}
+.cardUser h2{
+    letter-spacing: -0.264px;
+    margin-bottom: 10px;
+}
+.cardUser p{
+    margin-bottom: 36px;
+    opacity: 0.7;
+}
+.cardUser .flexDetails{
+    justify-content: space-around;
+}
+.cardUser .flexDetails .divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardUser .flexDetails .divInfo h4{
+    opacity: 0.5;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.homeS4 .box{
+    padding: 32px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #00C7B1;
+    background: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
+}
+.homeS4 .box .fxBtnsBox{gap: 32px;}
+.homeS4 .box .fxBtnsBox a{
+    text-decoration: none;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+.homeS4 .box .fxBtnsBox a:hover,
+.homeS4 .box .fxBtnsBox a:hover span{
+    font-weight: 600;
+    opacity: 1;
+}
+@media (min-width:1706.67px) {
+    .fxCardsTeam .cardFlexStyle{padding: 32px;}
+    .cardUser .flexDetails .divInfo h4{font-size: 14px;}
+}
+@media (min-width:1920px) {
+    .fxCardsTeam .cardFlexStyle{padding: 40px;}
+    .cardUser .flexDetails .divInfo h4{font-size: 17px;margin-bottom: 12px;}
+    .cardUser p{margin-bottom: 48px;}
+    .homeS4 .box{padding: 40px;}
+}
+@media (max-width:1396.36px) {
+    .homeS4 .fxGeneral{gap: 75px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 75px);
+        max-width: calc(33.3% - 0px);
+    }
+}
+@media (max-width:1228.8px) {
+    .homeS4 .fxGeneral{gap: 55px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 55px);
+        max-width: calc(33.3% - 0px);
+    }
+}
+@media (max-width:1024px) {
+    .homeS4 .fxGeneral{gap: 32px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 32px);
+        max-width: calc(33.3% - 0px);
+    }
+    .homeS4 .box{padding: 24px;}
+    .homeS4 .box .fxBtnsBox{gap: 24px;}
+    .homeS4 .fxGeneral{margin-top: 32px;}
+}
+@media (max-width:877.71px) {
+    .homeS4 .fxGeneral{gap: 24px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 24px);
+        max-width: calc(33.3% - 0px);
+    }
+    .cardUser{padding: 16px;}
+    .homeS4 .box{padding: 16px;}
+    .homeS4 .box .fxBtnsBox{gap: 16px;}
+    .homeS4 .fxGeneral{margin-top: 24px;}
+}
+@media (max-width:768px) {
+    .homeS4 .fxGeneral{gap: 16px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 16px);
+        max-width: calc(33.3% - 0px);
+    }
+    .cardUser .flexDetails{justify-content: space-between;}
+}
+@media (max-width:614.4px) {
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(90% - 16px);
+        max-width: calc(90% - 0px);
+        margin: auto;
+    }
+    .homeS4 .box h3{line-height: 150%;}
+    .homeS4 .box{flex-direction: column;gap: 24px;}
+}
+
+/* Home Section 5 Style */
+.homeS5{margin-bottom: 100px;}
+.homeS5 .backHomeS5{
+    position: relative;
+    height: 76vh;
+}
+.homeS5 .backHomeS5 .bannerSection{
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   object-fit: contain;
+}
+.homeS5 .divText{
+ padding: 10rem 56px 0 56px;
+ width: 60%;
+} 
+.homeS5 .divText h1{
+    line-height: 135%;
+    margin-bottom: 18px;
+}
+.homeS5 .divText p{
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 130.769%;
+    margin-bottom: 24px;
+}
+.homeS5 .divText button{
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+.homeS5 .divText button:hover{background: #00C7B1;}
+.homeS5 .divText button:hover span{color: #fff;}
+.homeS5 .divText button:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.homeS5 .divText button img{
+    filter: brightness(0) saturate(100%) invert(70%) sepia(41%) saturate(6222%) hue-rotate(133deg) brightness(96%) contrast(103%);
+}
+@media (min-width:1706.67px) {
+    .homeS5 .divText h1{margin-bottom: 24px;}
+}
+@media (min-width:1920px) {
+    .homeS5 .backHomeS5{height: 78vh;}
+    .homeS5 .divText h1{margin-bottom: 32px;}
+}
+@media (min-width:2048px) {
+    .homeS5 .backHomeS5{height: 716px;}
+}
+@media (max-width:1396.36px) {
+    .homeS5 .backHomeS5{height: 75vh;}
+    .homeS5 .divText {padding: 7rem 36px 0 36px;}
+}
+@media (max-width:1228.8px) {
+    .homeS5 .backHomeS5{height: 82vh;}
+    .homeS5 .divText {padding: 7rem 36px 0 36px;}
+}
+@media (max-width:1024px) {
+    .homeS5 .backHomeS5{height: 85vh;}
+    .homeS5 .divText {padding: 5rem 26px 0 26px;}
+}
+@media (max-width:614.4px) {
+    .homeS5 .divText{width: 100%;}
+    .homeS5 .backHomeS5{height: 100%;}
+    .homeS5 .backHomeS5 .bannerSection{
+        object-fit: cover;
+    }
+    .homeS5 .divText {padding: 5rem 1rem 0 1rem;}
+    .homeS5 .divText h1{font-size: 20px;width: 70%;font-weight: 600;margin-bottom: 12px;}
+}
+/* Home Section 6 Style */
+.homeS6{margin-bottom: 120px;}
+.homeS6 .fxHomeS6{
+    align-items: end;
+    margin-top: 40px;
+    gap: 90px;
+}
+.homeS6 .fxHomeS6 .divImage{
+    width: 60%;
+}
+.homeS6 .fxHomeS6 .divImage img{
+    width: 100%;
+    object-fit: cover;
+}
+.homeS6 .divText h1{
+    background: linear-gradient(180deg, #FFF 30%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2.4px;
+    margin-bottom: 24px;
+    width: 85%;
+}
+.homeS6 .divText p{
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 150%;
+    margin-bottom: 32px;
+    width: 85%;
+}
+.homeS6 .divText .fxText{
+    gap: 50px;
+    margin-bottom: 24px; 
+    align-items: baseline;
+}
+.homeS6 .divText .fxText .fxTextPart{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.homeS6 .divText .fxText .fxTextPart span{
+    color: rgba(255, 255, 255, 0.68);
+}
+.homeS6 .divText .fxText .fxTextPart h2{
+    background: linear-gradient(180deg, #FFF 30%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.homeS6 .divText .fxButtons{
+    gap: 32px;
+}
+.homeS6 .divText .fxButtons a{text-decoration: none;}
+@media (max-width:1396.36px) {
+    .homeS6 .fxHomeS6{gap: 80px;}
+}
+@media (max-width:1228.8px) {
+    .homeS6 .fxHomeS6{gap: 60px;}
+}
+@media (max-width:1024px) {
+    .homeS6 .fxHomeS6{gap: 48px;}
+}
+@media (max-width:877.71px) {
+    .homeS6 .fxHomeS6{gap: 32px;}
+    .homeS6 .divText h1{width: 75%; }
+    .homeS6 .divText p{width: 75%;}
+    .homeS6 .fxHomeS6{margin-top: 32px;}
+}
+@media (max-width:768px) {
+    .homeS6 .fxHomeS6{gap: 24px;}
+    .homeS6 .fxHomeS6{margin-top: 24px;}
+}
+@media (max-width:614.4px) {
+    .homeS6 .fxHomeS6{flex-direction: column;}
+    .homeS6 .fxHomeS6 .divImage{width: 100%;}
+    .homeS6 .divText h1{width: 100%; }
+    .homeS6 .divText p{width: 100%;}
+    .homeS6 .divText .fxText{gap: 1.5rem;}
+    .homeS6 .fxHomeS6{margin-top: 40px;}
+    .homeS6 .divText .fxText .fxTextPart h2{font-size: 24px;}
+    .homeS6{margin-bottom: 100px;}
+}
+/* Home Section 6 Style */
+.homeS7{margin-bottom: 120px;}
+.homeS7 .boxHomeS7{
+    width: 60%;
+    margin: auto;
+    margin-top: 32px;
+}
+.homeS7 .fx-itemQuestion{gap: 1rem;}
+.homeS7 .fxButtons{
+    gap: 18px;
+    justify-content: space-between;
+}
+.homeS7 .fxButtons button{
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.homeS7 .fxButtons button.active,
+.homeS7 .fxButtons button:hover{
+    border: 1px solid #00C7B1;
+    color: #00C7B1;
+}
+.homeS7 .boxHomeS7 .questions{
+    margin-top: 32px;
+}
+.homeS7 .boxHomeS7 .questions .listItems{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion{
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 34px 24px;
+    border: 1px solid #00C7B1;
+    background: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion span{
+    font-weight: 500;
+    font-family: 'Montserrat-Arabic';
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion .fxHead{
+    gap: 24px;
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion .questionContent{
+    display: none;
+    margin-top: 24px;
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion p{
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 140%;
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion p span{
+    color: #00C7B1;
+}
+.homeS7 .boxHomeS7 .questions .itemQuestion.active .icon {
+    transform: rotate(270deg);
+}
+.homeS8{margin-bottom: 120px;}
+.homeS8 .fxButtons{gap: 1rem;margin-top: 32px;}
+@media (max-width:1228.8px) {
+    .homeS7 .boxHomeS7{width: 70%;}
+    .homeS7 .boxHomeS7 .questions .itemQuestion{padding: 24px;}
+}
+@media (max-width:1024px) {
+    .homeS7 .boxHomeS7 .questions .itemQuestion .fxHead{gap: 1rem;}
+    .homeS7 .boxHomeS7 .questions .itemQuestion{padding: 20px;}
+    .homeS7 .boxHomeS7{width: 80%;}
+    .homeS7 .fxButtons{gap: 1rem;}
+    .homeS8 .fxButtons{gap: 1rem;margin-top: 24px;}
+
+}
+@media (max-width:877.71px) {
+    .homeS7 .fxButtons{gap: 14px;}
+    .homeS7 .boxHomeS7{width: 90%;}
+    .homeS7 .boxHomeS7 .questions{margin-top: 24px;}
+    .homeS7 .boxHomeS7 .questions .listItems{gap: 1rem;}
+    .homeS7 .fxButtons button{border-radius: 8px;}
+}
+@media (max-width:768px) {}
+@media (max-width:614.4px) {
+    .homeS7 .boxHomeS7{width: 100%;}
+    .homeS7 .fxButtons{gap: 12px;flex-wrap: wrap;justify-content: center;align-items: center;}
+    .homeS7 .fxButtons button{width: 40%;}
+    .homeS7-container{padding: 0 20px;}
+    .homeS7 .boxHomeS7 .questions .itemQuestion .fxHead{gap: 10px;}
+    .homeS7 .boxHomeS7 .questions .itemQuestion{padding: 1rem;}
+    .homeS7 .boxHomeS7 .questions .itemQuestion .fxHead h4{line-height: 150%;}
+    .homeS8{margin-bottom: 80px;}
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

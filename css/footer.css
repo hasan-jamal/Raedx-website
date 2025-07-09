@@ -1,0 +1,88 @@
+footer{
+    position: relative;
+    z-index: 0;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* سمك البوردر */
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.0)
+    );
+    z-index: -1; 
+  }
+footer .footer-container{
+    padding: 68px 200px 30px 200px;
+}
+footer .fxFooter{
+    gap: 79px;
+}
+footer .fxFooter .footerLinks{
+    justify-content: space-between;
+    width: 100%;
+}
+footer .fxFooter .listLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+footer .fxFooter .listLinks a{
+    opacity: 0.5;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+footer .fxFooter .listLinks a:hover{
+    opacity: 1;
+}
+footer p{
+    opacity: 0.7;
+}
+@media (min-width:1706.67px) {
+    footer .footer-container{padding: 78px 220px 40px 220px;}
+}
+@media (min-width:1920px) {
+    footer .footer-container{padding: 88px 240px 50px 240px;}
+}
+@media (max-width:1396.36px) {
+    footer .footer-container{ padding: 58px 160px 20px 160px;}
+}
+@media (max-width:1228.8px) {
+    footer .footer-container{ padding: 38px 110px 20px 110px;}
+}
+@media (max-width:1024px) {
+    footer .footer-container{ padding: 28px 50px 20px 50px;}
+}
+@media (max-width:877.71px) {
+    footer .footer-container{ padding: 24px 30px 1rem 30px;}
+}
+@media (max-width:768px) {
+    footer .footer-container{ padding: 24px 20px;}
+}
+@media (max-width:614.4px) {
+    footer .fxFooter{flex-direction: column;gap: 32px;}
+    footer .fxFooter .divImage{
+        width: 100%;
+    }
+    footer .fxFooter .divImage img{
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    footer .fxFooter .footerLinks{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: normal;
+        row-gap:3rem ;
+    }
+    footer .fxFooter .listLinks{width: 45%;text-align: center;gap: 1rem;}
+    footer p{margin-top: 2rem;}
+    footer .fxFooter .listLinks a,
+    footer .fxFooter .listLinks h3{font-size: 14px;}
+}

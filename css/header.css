@@ -1,0 +1,340 @@
+/* Design Navbar in mobile  */
+.hamburger {
+  position: relative;
+  z-index: 999;
+  direction: rtl;
+  cursor: pointer;
+  padding:10px 8px;
+  border-radius: 4px;
+  height: 100%;
+  width: max-content;
+  flex-direction: column;
+  gap: 5px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger div {
+  background-color:#fff ;
+  border-radius: 1px;
+  height: 2px;
+  width: 22.42px;
+}
+.nav-mobile {
+  background: #000;
+  display: inline-block;
+  position: fixed;
+  height: 100vh;
+  width:0;
+  right: -100%;
+  transition: all 0.6s ease-in-out;
+  z-index: 9999;
+  top: 0;
+  font-family: 'Inter';
+  overflow-y: scroll;
+}
+.sidenav-active nav, .sidenav-active .coverNav {
+  width: 100%;
+  right: 0;
+}
+.nav-mobile::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.nav-mobile::-webkit-scrollbar{
+  width: 3px;
+	background-color: #F5F5F5;
+}
+.nav-mobile::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+	background-color: #141CA4 ;
+}
+.nav-mobile .links{height: 90%;}
+.nav-mobile .logo {
+  text-align: center;
+  width: 50%;
+  display: block;
+}
+.nav-mobile .logo img {
+  border-radius: 50%;
+  width: 100%;
+}
+.nav-mobile .fxHeadList{
+  padding: 1rem 20px 32px 20px;
+}
+
+.nav-mobile .fxHeadList .divLogo img{width: 100%;height: 100%;}
+  .nav-mobile .links .fx-links{
+    display: flex;
+    flex-direction: column;
+  }
+.nav-mobile .links .border{
+  height: 0.5px;
+  width: 100%;
+  background-color: rgba(60, 199, 245, 0.2) ;
+}
+.nav-mobile .links a{
+  text-decoration: none;
+  color: #fff;
+  padding:20px;
+  opacity: 0.5;
+  font-size: 18px;
+}
+.nav-mobile .links a span{
+  color: #fff;
+  font-size: 18px;
+}
+.nav-mobile a:hover ,
+.nav-mobile a span:hover,
+.nav-mobile .links a.active {
+  	opacity: 1;
+    font-weight: 500 ;
+}
+.nav-mobile .links a svg{
+  width: 24px;
+}
+.nav-mobile .divDropdown .publicStyleList {
+  border-radius: 12px;
+  position: relative;
+  width: 92%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(245deg, #1F1F1F -0.21%, #323232 59.47%, #1F1F1F 93.38%);
+  
+  /* Transition behavior */
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+.nav-mobile .publicStyleList.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  height: max-content;
+}
+.nav-mobile .btnDropdown .fxTitle{gap: 8px;}
+.nav-mobile .btnDropdown.active {
+  padding-bottom: 8px;
+}
+/* اختياري: تدوير السهم */
+.nav-mobile .btnDropdown.active .arrowDown {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.nav-mobile .arrowDown {
+  transition: transform 0.3s ease;
+}
+.nav-mobile .publicStyleList .fxGap{
+  width: 95%;
+}
+.nav-mobile .publicStyleList button{
+  width: 100%;
+  justify-content: space-between;
+  gap: 24px;
+  background: none;
+  padding: 8px 24px;
+  transition:all 0.3s ease;
+}
+.nav-mobile .publicStyleList button span{font-size: 16px;}
+.nav-mobile .publicStyleList button:hover span{
+ color: #00C7B1;
+}
+.nav-mobile .publicStyleList button:hover img,
+.nav-mobile .publicStyleList button:hover svg{
+  filter: brightness(0) saturate(100%) invert(62%) sepia(44%) saturate(4736%) hue-rotate(134deg) brightness(98%) contrast(104%);
+}
+.nav-mobile .publicStyleList button:first-child{
+  padding-top: 1rem;
+}
+.nav-mobile .publicStyleList button:last-child{
+  padding-bottom: 1rem;
+}
+.nav-mobile .publicStyleList button svg{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(102%);
+}
+.nav-mobile .divLang .publicStyleList button{
+  padding: 12px 1rem;
+}
+.nav-mobile button:hover{transform: scale(1);}
+.sidenav-active .navbar-mobile{display: block;}
+.sidenav-active .close-nav{ 
+  display: block;
+  background:#008979;
+  position: relative;
+  z-index: 999;
+ border-radius: 50%;
+ padding: 7px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.sidenav-active .close-nav img{
+  width: 20px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(79%) saturate(51%) hue-rotate(216deg) brightness(121%) contrast(100%);
+}
+.sidenav-active .coverNav {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 5000;
+  transition: background-color 0.3s, transform 0.3s;
+  display: block;
+}
+nav, .hamburger, .coverNav {
+  transition: transform 0.3s;
+  display: none;
+}
+.navbar-mobile{
+  display: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+.navbar-mobile .btns-header{
+  padding: 20px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-mobile .btns-header button{height: 50px;}
+.navbar-mobile .btns-header button,
+.navbar-mobile .btns-header button span{font-size: 18px;}
+.navbar-mobile .flex-head{
+  padding: 16px 20px;
+  box-shadow: 0px 12px 74px 0px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  display: flex;
+}
+.navbar-mobile .flex-head img{
+  width: max-content;
+  object-fit: contain;
+}
+.sidenav-active .navbar-mobile .flex-head{display: none;}
+/* Header Style */
+header{
+  padding: 24px 0 21px 0;
+  position: relative;
+  z-index: 1; 
+  background: #000;
+}
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* سمك البوردر */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1; /* خلف الهيدر */
+}
+header .fxHeader .divLinks .fxLinks{
+  gap: 23px;
+  display: flex;
+}
+header .fxHeader .divLinks a{
+  color: #FFF;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  gap: 4px;
+}
+header .fxHeader .divLinks a:hover,
+header .fxHeader .divLinks a.active{
+  opacity: 1;
+}
+header .fxHeader .divButtons{
+  gap: 1rem;
+}
+header .fxHeader .divButtons .divLang button{
+  border-radius: 12px;
+  padding: 0px 16px;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+header .fxHeader .divButtons button{padding: 0 23px;}
+header .fxHeader .publicStyleList {
+  border-radius: 12px;
+  width: max-content;
+  position: absolute;
+  top: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(245deg, #1F1F1F -0.21%, #323232 59.47%, #1F1F1F 93.38%);
+  
+  /* Transition behavior */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+header .fxHeader .publicStyleList.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .fxHeader .publicStyleList .fxGap{gap: 13px;}
+header .fxHeader .publicStyleList button{
+  width: 100%;
+  justify-content: space-between;
+  gap: 24px;
+  background: none;
+  padding: 0 24px;
+  transition:all 0.3s ease;
+}
+header .fxHeader .publicStyleList button:hover span{
+ color: #00C7B1;
+}
+header .fxHeader .publicStyleList button:hover img,
+header .fxHeader .publicStyleList button:hover svg{
+  filter: brightness(0) saturate(100%) invert(62%) sepia(44%) saturate(4736%) hue-rotate(134deg) brightness(98%) contrast(104%);
+}
+header .fxHeader .publicStyleList button:first-child{
+  padding-top: 24px;
+}
+header .fxHeader .publicStyleList button:last-child{
+  padding-bottom: 24px;
+}
+header .fxHeader .publicStyleList button svg{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(102%);
+}
+header .fxHeader .divLang .publicStyleList button{
+  padding: 12px 1rem;
+}
+@media (min-width:1706.67px) {
+  header .fxHeader .divLinks .fxLinks{gap: 28px;}
+}
+@media (min-width:1920px) {
+  header{padding: 32px 0;}
+  header .fxHeader .divLinks .fxLinks{gap: 32px;}
+}
+@media (max-width:1396.36px) {
+  header .fxHeader .divButtons button{padding: 0 20px;}
+}
+@media (max-width:1228.8px) {
+  header .fxHeader .divButtons button{padding: 0 1rem;}
+  header .fxHeader .divButtons{gap: 12px;}
+}
+@media (max-width:1024px) {
+    header .fxHeader .divButtons button{padding: 0 12px;}
+}
+@media (max-width:614.4px) {
+  header{display: none;}
+  .hamburger{display: flex;}
+  .navbar-mobile{display: block;}
+  .sidenav-active .navbar-mobile .flex-head{display: flex;}
+}
