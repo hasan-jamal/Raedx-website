@@ -495,43 +495,28 @@ p, button, a { font-size: 1rem; }
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: start;
+  gap: 12px;
+  direction: ltr;
   margin-top: 40px;
 }
 .pagination button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  border: 2px solid #EAEAEA;
-  background: #FFF;
-  color: #9C9C9C;
-  line-height: 30px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  background: none;
 }
-.pagination button:hover,
 .pagination button.active{
-  border: 2px solid #00CFFF;
-  color: #00CFFF;
+  border-radius: 8px;
+  background: linear-gradient(154deg, #00C7B1 2.78%, #00675C 121.8%);
+  width: 40px;
+  height: 40px;
+}
+.pagination button:hover{
+  color: #00C7B1;
 }
 .pagination button:hover img,
 .pagination button.active img {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(23%) saturate(7476%) hue-rotate(150deg) brightness(100%) contrast(107%);
-}
-.pagination .arrowLeft img{
-  transform: rotate(180deg);
-  filter: brightness(0) saturate(100%) invert(72%) sepia(23%) saturate(7476%) hue-rotate(150deg) brightness(100%) contrast(107%);
-}
-.pagination .arrowLeft{
-  border: 2px solid #00CFFF;
-  opacity: 0.3;
-}
-.pagination .arrowRight{
-  border: 2px solid #0B63E5;
-}
+  transform: scale(1.1);
+filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-rotate(120deg) brightness(84%) contrast(101%);}
 .h48px{height: 48px;}
 .h44px{height: 44px;}
 .divTitle{
@@ -550,6 +535,15 @@ p, button, a { font-size: 1rem; }
   color: rgba(255, 255, 255, 0.88);
   width: 80%;
   margin: auto;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (min-width:1706.67px) {
   .pagination button {width: 60px;height: 60px;}
@@ -583,7 +577,6 @@ p, button, a { font-size: 1rem; }
   .divTitle{width: 70%;}
 }
 @media (max-width:1024px) {
-  .pagination{gap: 12px;margin-top: 32px;}
   .h48px,
   .h44px{height: 37px;}
 }

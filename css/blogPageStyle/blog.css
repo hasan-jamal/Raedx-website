@@ -1,0 +1,160 @@
+.blogPage{
+    margin-top: 57px;
+    margin-bottom: 10rem;
+}
+.blogPage .boxBlogs{
+    margin-top: 32px;
+}
+.blogPage .fx-itemQuestion{gap: 1rem;}
+.blogPage .fxButtons{
+    gap: 18px;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.blogPage .fxButtons button{
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.blogPage .fxButtons button.active,
+.blogPage .fxButtons button:hover{
+    border: 1px solid #00C7B1;
+    color: #00C7B1;
+}
+@media (max-width:1024px) {
+    .blogPage .fxButtons{gap: 1rem;}
+    .blogPage .fxButtons{gap: 1rem;margin-top: 24px;}
+}
+@media (max-width:877.71px) {
+    .blogPage .fxButtons{gap: 14px;}
+    .blogPage .fxButtons button{border-radius: 8px;}
+}
+@media (max-width:614.4px) {
+    .blogPage .fxButtons{gap: 12px;flex-wrap: wrap;justify-content: center;align-items: center;width: 100%;}
+    .blogPage .fxButtons button{width: 29%;}
+}
+/* Blog Details Page */
+.blogDetails{
+    margin-top: 50px;
+}
+.blogDetails .blogImage1{
+    height: 503px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+.blogDetails .fxDetailsBlog{
+    padding: 24px 0;
+    position: relative;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+.blogDetails .fxDetailsBlog::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.0)
+    );
+    z-index: -1;
+}
+.blogDetails .fxDetailsBlog .partOne{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+}
+.blogDetails .fxDetailsBlog .partOne .userInfo{
+    gap: 8px;
+}
+.blogDetails .fxDetailsBlog .partOne h1{
+    line-height: 140%;
+}
+.blogDetails .fxDetailsBlog .partOne img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20.5px;
+    object-fit: cover;
+}
+.blogDetails .fxDetailsBlog .partTwo{
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+}
+.blogDetails .fxDetailsBlog .partTwo .fxData{gap: 8px;}
+.blogDetails .contentBlog h2{
+    margin-bottom: 24px;
+}
+.blogDetails p{line-height: 160%;}
+.blogDetails .contentBlog .blogImage2{
+    height: 397px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+.blogDetails .lastPart{
+    margin-top: 24px;
+    gap: 58px;
+}
+.blogDetails .lastPart p{width:58%;}
+.blogDetails .lastPart .divImage{width: 42%;}
+.blogDetails .lastPart img{
+    border-radius: 30px;
+    height: 350px;
+    object-fit: contain;
+    width: 100%;
+}
+.cardsBlogsSection{margin: 65px 0;}
+@media (min-width:1706.67px) {
+    .blogDetails .blogImage1{height: 550px;}
+}
+@media (min-width:1920px) {
+    .blogDetails .blogImage1{height: 600px;}
+}
+@media (min-width:2048px) {
+    .blogDetails .blogImage1{height: 700px;}
+}
+@media (min-width:2304px) {}
+@media (min-width:3072px) {}
+@media (max-width:1396.36px) {
+    .blogDetails .blogImage1{height: 450px;}
+    .blogDetails .contentBlog .blogImage2{height: 360px;}
+}
+@media (max-width:1228.8px) {
+    .blogDetails .blogImage1{height: 400px;}
+    .blogDetails .contentBlog .blogImage2{height: 320px;}
+    .blogDetails .fxDetailsBlog .partTwo .fxData img{width: 20px;}
+    .blogDetails .lastPart{gap: 40px;}
+}
+@media (max-width:1024px) {
+    .blogDetails .blogImage1{height: 350px;}
+    .blogDetails .contentBlog .blogImage2{height: 300px;}
+    .blogDetails .lastPart{gap: 32px;}
+}
+@media (max-width:877.71px) {
+    .blogDetails .blogImage1{height: 300px;}
+    .blogDetails .contentBlog .blogImage2{height: 280px;}
+    .blogDetails .fxDetailsBlog .partTwo .fxData img{width: 15px;}
+    .blogDetails .lastPart{gap: 24px;}
+}
+@media (max-width:768px) {
+    .blogDetails .contentBlog .blogImage2{height: 250px;}
+}
+@media (max-width:614.4px) {
+    .blogDetails .lastPart{flex-direction: column;}
+    .blogDetails .lastPart p{width:100%;}
+    .blogDetails .lastPart .divImage{width: 100%;}
+    .blogDetails .blogImage1{border-radius: 20px;}
+    .blogDetails .fxDetailsBlog .partOne{width: 75%;}
+    .blogDetails{margin-top: 24px;}
+}
+@media (max-width:512px) {}

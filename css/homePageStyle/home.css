@@ -809,14 +809,3 @@
     .homeS7 .boxHomeS7 .questions .itemQuestion .fxHead h4{line-height: 150%;}
     .homeS8{margin-bottom: 80px;}
 }
-
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease-out;
-}
-
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
