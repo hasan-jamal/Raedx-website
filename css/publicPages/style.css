@@ -1,0 +1,667 @@
+.publicSection{
+    margin: 40px 0 100px 0;
+}
+.publicSection .fxPublicSection{
+    gap: 50px;
+}
+.publicSection .sidePart{
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    width: 25%;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+.publicSection .sidePart .listBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.publicSection .sidePart .listBtns button{
+    padding: 13px 34px;
+    text-align: start;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.publicSection .sidePart .listBtns button.active,
+.publicSection .sidePart .listBtns button:hover{
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.publicSection .sidePart .listBtns button.active::before{
+    content: "";
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 21px;
+    position: absolute;
+    border-radius:  0px 12px 12px 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.publicSection .contentPart{
+    width: 70%;
+}
+.publicSection .contentPart .fxGeneral{
+    gap: 32px;
+    align-items: normal;
+    row-gap: 50px;
+}
+.publicSection .contentPart .boxImage{
+    border-radius: 32px;
+    backdrop-filter: blur(20px);
+    height: 260px;
+    flex: 1 1 calc(33.3% - 32px);
+    max-width: calc(33.3% - 0px);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.publicSection .contentPart .boxEmpty {
+    border: 3px solid transparent;
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    background-clip: padding-box;
+    position: relative;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.publicSection .contentPart .boxEmpty:hover {transform: scale(0.98);cursor: pointer;}
+.publicSection .contentPart .boxEmpty:hover img{
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(52%) saturate(5849%) hue-rotate(132deg) brightness(96%) contrast(102%);}
+.publicSection .contentPart .boxEmpty img{width: 58px;height: 58px;}
+.publicSection .contentPart .boxEmpty::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 32px;
+    padding: 3px;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    background: repeating-linear-gradient(90deg, rgba(237, 237, 237, 0.20) 0, rgba(237, 237, 237, 0.20) 10px, transparent 10px, transparent 20px);
+    pointer-events: none;
+}
+
+.publicSection .contentPart .boxImage .divText{
+    padding: 16px;
+    border-radius: 0px 0px 32px 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    gap: 18px;
+}
+.publicSection .contentPart .boxImage button{
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.10);
+}
+.publicSection .contentPart  .boxImage a{ 
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.publicSection .contentPart  .boxImage a:hover{
+    transform: scale(0.97);
+}
+.publicSection .contentPart  .boxImage a img{transform: rotate(180deg);}
+@media (min-width:1706.67px) {
+    .publicSection .contentPart .boxImage{height: 300px;}
+    .publicSection .contentPart .boxImage button{font-size: 12px;}
+    .publicSection .contentPart .boxEmpty img{width: 68px;height: 68px;}
+}
+@media (min-width:1920px) {
+    .publicSection .contentPart .boxImage{height: 340px;}
+    .publicSection .sidePart .listBtns button{padding: 18px 40px;}
+    .publicSection .contentPart .boxImage button{font-size: 15px;}
+    .publicSection .contentPart .boxEmpty img{width: 78px;height: 78px;}
+}
+@media (min-width:2048px) {
+        .publicSection .contentPart .boxImage{height: 370px;}
+            .publicSection .sidePart .listBtns button{padding: 22px 44px;}
+}
+@media (max-width:1396.36px) {
+    .publicSection .fxPublicSection{gap: 40px;}
+}
+@media (max-width:1228.8px) {
+    .publicSection .contentPart .fxGeneral{gap: 24px;row-gap: 40px;}
+    .publicSection .contentPart .boxImage{
+        height: 230px;
+        flex: 1 1 calc(33.3% - 24px);
+        max-width: calc(33.3% - 0px);
+    }
+    .publicSection .fxPublicSection{gap: 32px;}
+    .publicSection .sidePart .listBtns button{padding: 10px 28px;}
+    .publicSection .sidePart .listBtns{gap: 20px;}
+    .publicSection .sidePart{gap: 70px;}
+    .publicSection .contentPart .boxEmpty img{width: 48px;height: 48px;}
+}
+@media (max-width:1024px) {
+    .publicSection .contentPart .fxGeneral{gap: 20px;row-gap: 32px;}
+    .publicSection .contentPart .boxImage{
+        height: 200px;
+        flex: 1 1 calc(33.3% - 20px);
+        max-width: calc(33.3% - 0px);
+        border-radius: 24px;
+    }
+    .publicSection .contentPart .boxEmpty img{width: 40px;height: 40px;}
+    .publicSection .sidePart .listBtns button{padding: 8px 20px;}
+    .publicSection .contentPart .boxImage button{font-size: 8px;}
+    .publicSection .sidePart{padding: 24px;border-radius: 24px;}
+    .publicSection .contentPart .boxImage .divText{gap: 14px;padding: 12px;    border-radius: 0px 0px 24px 24px;}
+    .publicSection .contentPart .boxImage a img{width: 10px;}
+    .publicSection .sidePart .listBtns button.active::before{width: 15px;}
+    .publicSection .sidePart .listBtns{gap: 1rem;}
+    .publicSection .sidePart{gap: 50px;}
+}
+@media (max-width:877.71px) {
+    .publicSection .contentPart .fxGeneral{gap: 1rem;row-gap: 24px;}
+    .publicSection .contentPart .boxImage{
+        height: 180px;
+        flex: 1 1 calc(33.3% - 1rem);
+        max-width: calc(33.3% - 0px);
+    }
+    .publicSection .contentPart .boxImage .divText{gap: 12px;padding: 8px;}
+    .publicSection .contentPart .boxImage a img{width: 8px;}
+    .publicSection .sidePart{gap: 32px;}
+    .publicSection .sidePart .btnLinear span{font-size: 9px;}
+    .publicSection .sidePart .btnLinear img{width: 15px;}
+    .publicSection .contentPart .boxEmpty img{width: 32px;height: 32px;}
+}
+@media (max-width:768px) {
+    .publicSection .contentPart .fxGeneral{gap: 1rem;row-gap: 24px;}
+    .publicSection .contentPart .boxImage{
+        height: 200px;
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 0px);
+        border-radius: 24px;
+    }
+}
+@media (max-width:614.4px) {
+    .publicSection .fxPublicSection{flex-direction: column;}
+    .publicSection .sidePart{width: 100%;}
+    .publicSection .contentPart{width: 100%;}
+    .publicSection .contentPart .fxGeneral{
+        gap: 1rem;
+        row-gap: 1.5rem;
+        width: 90%;
+        margin: auto;
+    }
+    .publicSection .contentPart .boxImage{
+        height: 240px;
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+        border-radius: 24px;
+    }
+    .publicSection .contentPart .boxImage .divText{padding: 16px;}
+    .publicSection .sidePart .btnLinear span{font-size: 13px;}
+    .publicSection .sidePart .btnLinear img{width: 20px;}
+    .publicSection .sidePart .listBtns button{padding: 12px 28px;}
+    .publicSection .subtitle16px{font-size: 14px;}
+    .publicSection .contentPart .boxImage button{font-size: 10px;}
+    .publicSection .contentPart .boxImage a img{width: 15px;}
+    .publicSection .contentPart .boxImage a span{font-size: 15px;}
+    .publicSection .contentPart .boxImage .divText{gap: 20px;}
+    .publicSection .contentPart .boxEmpty img{width: 58px;height: 58px;}
+    .publicSection .contentPart .boxEmpty h2{font-size: 1rem;}
+}
+
+
+.publicSection .boxText{
+    padding: 32px;
+    margin-bottom: 32px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #00C7B1;
+    background: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
+}
+.publicSection .boxText .fxBtnsBox{gap: 32px;}
+.publicSection .boxText .fxBtnsBox a{
+    text-decoration: none;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+.publicSection .boxText .fxBtnsBox a img{
+    filter: brightness(0) saturate(100%) invert(52%) sepia(94%) saturate(1964%) hue-rotate(136deg) brightness(101%) contrast(101%);
+}
+.publicSection .boxText .fxBtnsBox a:hover,
+.publicSection .boxText .fxBtnsBox a:hover span{
+    font-weight: 600;
+    opacity: 1;
+}
+ .divDropdown .publicStyleList {
+  border-radius: 12px;
+  position: absolute;
+  width: 92%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(245deg, #1F1F1F -0.21%, #323232 59.47%, #1F1F1F 93.38%);
+  
+  /* Transition behavior */
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+ .publicStyleList.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  height: max-content;
+}
+ .btnDropdown .fxTitle{gap: 8px;}
+ .btnDropdown.active .arrowDown {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+ .arrowDown {
+  transition: transform 0.3s ease;
+}
+ .publicStyleList .fxGap{
+  width: 100%;
+}
+ .publicStyleList button{
+  width: 100%;
+  justify-content: space-between;
+  gap: 24px;
+  background: none;
+  padding: 8px 24px;
+  transition:all 0.3s ease;
+}
+ .publicStyleList button span{font-size: 16px;}
+ .publicStyleList button:hover span{
+ color: #00C7B1;
+}
+ .publicStyleList button:hover img,
+ .publicStyleList button:hover svg{
+  filter: brightness(0) saturate(100%) invert(62%) sepia(44%) saturate(4736%) hue-rotate(134deg) brightness(98%) contrast(104%);
+}
+ .publicStyleList button:first-child{
+  padding-top: 1rem;
+}
+ .publicStyleList button:last-child{
+  padding-bottom: 1rem;
+}
+ .publicStyleList button svg{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(102%);
+}
+ .divLang .publicStyleList button{
+  padding: 12px 1rem;
+}
+.publicSection .boxTable{
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    padding: 24px;
+    width: 100%;
+}
+.publicSection .contentPart .fxFilter{
+    gap: 90px;
+    align-items: center;
+    position: relative;
+    z-index: 1; 
+    padding-bottom: 24px;
+    margin-bottom: 24px
+}
+.publicSection .contentPart .fxFilter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.publicSection .contentPart .divFilter{
+    display: flex;
+    gap: 16px;
+    width: 80%;
+}
+.publicSection .contentPart .divFilter .divDropdown,
+.publicSection .contentPart .divFilter form{
+    width: 33.3%;
+}
+.publicSection .contentPart .divFilter .divDropdown a,
+.publicSection .contentPart .divFilter form{
+    opacity: 0.7;
+}
+.publicSection .contentPart .divFilter .divDropdown a{
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    background: rgba(0, 199, 177, 0.20);
+    gap: 8px;
+    padding: 0 14px;
+}
+.publicSection .contentPart .divFilter .divDropdown .publicStyleList{
+    width: 100%;
+}
+.publicSection .contentPart .divFilter form .form-group{
+    gap: 8px;
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+   color: #fff;
+    background: rgba(0, 199, 177, 0.20);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0 14px;
+}
+.publicSection .contentPart .divFilter form .form-group input{
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+.publicSection .boxTable table{width: 100%;}
+.publicSection .boxTable table th{
+    color: #fff;
+}
+.publicSection .boxTable table td{
+    color: rgba(255, 255, 255, 0.5);
+}
+.publicSection .boxTable table th,
+.publicSection .boxTable table td{
+    text-align: center;
+    padding: 9px 0;
+}
+.publicSection .boxTable table td a{
+    justify-content: center;
+    gap: 4px;
+}
+.publicSection .fxCardsPrice{gap: 24px;margin: 0;margin-top: 4rem;}
+.publicSection .fxCardsPrice .cardFlexStyle {
+    flex: 1 1 calc(47% - 24px);
+    max-width: calc(47% - 0px);
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    background: rgba(0, 199, 177, 0.20);
+}
+input#custom-input-date {
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+.ui-widget-content {
+    border: 1px solid rgba(43, 255, 255, 0.10) !important;
+    color: #fff !important;
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%) !important;
+    backdrop-filter: blur(20px);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active, 
+.ui-button.ui-state-active:hover{
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%) !important;
+    border: 1px solid rgba(43, 255, 255, 0.10) !important;
+}
+@media (min-width:1920px) {
+    .publicSection .boxTable table th, .publicSection .boxTable table td{padding: 14px 0;}
+    .publicSection .boxTable table td a{gap: 12px;}
+    .publicSection .contentPart .divFilter .divDropdown a img{width: 20px;}
+    .publicSection .contentPart .divFilter form .form-group img,
+    .input-field img{width: 25px;}
+}
+@media (max-width:1228.8px) {
+    .publicSection .contentPart .fxFilter{gap: 70px;}
+    .publicSection .boxText{padding: 24px;}
+}
+@media (max-width:1024px) {
+    .publicSection .contentPart .fxFilter{gap:50px;}
+    .publicSection .boxText{padding: 20px;margin-bottom: 1rem;}
+    .publicSection .boxTable table td a img,
+    .publicSection .contentPart .divFilter .divDropdown a img{width: 10px;}
+    .publicSection .contentPart .divFilter form .form-group img,
+    .input-field img{width: 13px;}
+}
+@media (max-width:877.71px) {
+    .publicSection .contentPart .fxFilter{gap:32px;}
+    .publicSection .fxCardsPrice{gap: 1rem;}
+    .publicSection .fxCardsPrice .cardFlexStyle {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 0px);
+    }
+    .publicSection .boxText{padding: 1rem;}
+    .publicSection .boxTable table td a img,
+    .publicSection .contentPart .divFilter .divDropdown a img{width: 8px;}
+    .publicSection .contentPart .divFilter form .form-group img,
+    .input-field img{width: 10px;}
+}
+@media (max-width:768px) {
+    .publicSection .contentPart .fxFilter{gap:24px;}
+}
+@media (max-width:614.4px) {
+    .publicSection .contentPart .fxFilter{flex-direction: column;}
+    .publicSection .contentPart .divFilter{flex-wrap: wrap;}
+    .publicSection .contentPart .divFilter{width: 100%;}
+    .publicSection .contentPart .divFilter .divDropdown, .publicSection .contentPart .divFilter form{width: 47%;}
+    .publicSection .boxTable{padding: 1rem;}
+    .divTable{overflow-y: auto;}
+    .publicSection .boxTable table th, .publicSection .boxTable table td {
+           white-space: nowrap;
+           padding:20px;
+    }
+    .publicSection .fxCardsPrice .cardFlexStyle {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
+    .publicSection .contentPart .fxCardsPrice {margin-top: 3rem;}
+    table .divDropdown .publicStyleList{width: 100px;}
+    .publicSection .contentPart .divFilter .divDropdown a{padding: 0 7px;}
+    .publicSection .boxText{flex-direction: column;}
+}
+/* Setting Page Style */
+.settingPage .contentPart h2{
+    margin-bottom: 18px;
+}
+.settingPage .fxContactBtns{gap: 24px;margin-bottom: 32px;}
+.settingPage .fxContactBtns button{
+    width: 50%;
+    border-radius: 12px;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.settingPage .fxContactBtns button:first-child img{opacity: 0.5;}
+.settingPage .fxContactBtns button span{direction: ltr;}
+.settingPage .boxText .flexPart1{
+    gap: 11px;
+}
+.settingPage .boxText .flexPart1 .userImage{
+    border-radius: 62px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+}
+.settingPage .boxText .flexPart1 .divText{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.settingPage .boxText .flexPart2{gap: 7px;}
+@media (max-width:614.4px) {
+    .settingPage .boxText{align-items: start !important;}
+    .settingPage .fxContactBtns{flex-direction: column;gap: 1rem;}
+    .settingPage .fxContactBtns button{width: 100%;}
+}
+/* Modal */
+.modalUsers{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    background: #000;
+    backdrop-filter: blur(20px);
+    width: 30%;
+    z-index: 999;
+    display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    padding: 24px;
+    overflow-y: auto;
+}
+.modalUsers::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.modalUsers::-webkit-scrollbar{
+    width: 0px;
+	background-color: #F5F5F5;
+}
+.modalUsers::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+	background-color: #008979 ;
+}
+.modalUsers .modal-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1; 
+}
+.modalUsers .modal-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.modalUsers .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+.modalUsers .form-group input{
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    opacity: 0.5;
+    background: rgba(0, 199, 177, 0.20);
+    padding: 0 1rem;
+}
+.modalUsers .btnLinear{margin-top: 24px;}
+.modalUsers .profile-pic {
+	 color: transparent;
+	 transition: all 0.3s ease;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 position: relative;
+	 transition: all 0.3s ease;
+     margin-bottom: 25px;
+}
+.modalUsers .profile-pic input {
+	 display: none;
+}
+.modalUsers .profile-pic img {
+	 position: absolute;
+	 object-fit: cover;
+    width: 82px;
+    height: 82px;
+	 box-shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+	 border-radius: 100px;
+	 z-index: 0;
+}
+.modalUsers .profile-pic .-label {
+	 cursor: pointer;
+    width: 82px;
+    height: 82px;
+    opacity: 0;
+}
+.modalUsers .profile-pic:hover .-label {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background-color: rgba(0, 0, 0, .8);
+	 z-index: 10000;
+	 color: #fafafa;
+	 transition: background-color 0.2s ease-in-out;
+	 border-radius: 100px;
+	 margin-bottom: 0;
+     opacity: 1;
+}
+@media (min-width:1706.67px) {
+    .modalUsers{width: 500px;}
+    .modalUsers .profile-pic img,
+    .modalUsers .profile-pic .-label {width: 100px;height: 100px;}
+}
+@media (min-width:1920px) {
+    .modalUsers .profile-pic img,
+    .modalUsers .profile-pic .-label {width: 120px;height: 120px;}
+}
+@media (min-width:2048px) {
+    .modalUsers{width: 600px;}
+    .modalUsers .profile-pic img,
+    .modalUsers .profile-pic .-label {width: 140px;height: 140px;}
+}
+@media (min-width:2304px) {}
+@media (min-width:3072px) {}
+@media (max-width:1396.36px) {
+    .modalUsers{width: 35%;}
+    .modalUsers .profile-pic{margin-bottom: 24px;}
+}
+@media (max-width:1228.8px) {
+    .modalUsers{padding: 20px;}
+    .modalUsers .profile-pic{margin-bottom: 20px;}
+    .modalUsers .modal-title{padding-bottom: 1rem;margin-bottom: 12px;}
+    .modalUsers .form-group{margin-bottom: 12px;}
+    .modalUsers .profile-pic img,
+    .modalUsers .profile-pic .-label {width: 62px;height: 62px;}
+    .modalUsers .profile-pic:hover .-label span{font-size: 9px;}
+}
+@media (max-width:1024px) {
+    .modalUsers{padding: 1rem;}
+    .modalUsers .profile-pic{margin-bottom: 1rem;}
+    .modalUsers .profile-pic img,
+     .modalUsers .profile-pic .-label {width: 52px;height: 52px;}
+     .modalUsers .profile-pic:hover .-label span{font-size: 7px;}
+}
+@media (max-width:877.71px) {
+        .modalUsers{height: 90vh;}
+}
+@media (max-width:768px) {
+    
+}
+@media (max-width:614.4px) {
+    .modalUsers{height: max-content;width: 85%;}
+    .modalUsers .form-group{gap: 7px;}
+    .modalUsers .profile-pic img,
+     .modalUsers .profile-pic .-label {width: 70px;height: 70px;}
+          .modalUsers .profile-pic:hover .-label span{font-size: 10px;}
+}
+@media (max-width:512px) {}

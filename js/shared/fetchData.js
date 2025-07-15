@@ -36,14 +36,22 @@ function setupDropdowns() {
   });
 }
 
-Promise.all([
-  fetch("shared/header.html").then((res) => res.text()),
-  fetch("shared/navbarMobile.html").then((res) => res.text()),
-]).then(([headerHtml, navbarHtml]) => {
-  document.getElementById("header").innerHTML = headerHtml;
-  document.getElementById("navbarMobile").innerHTML = navbarHtml;
+document.addEventListener("DOMContentLoaded", () => {
+  Promise.all([
+    fetch("shared/header.html").then((res) => res.text()),
+    fetch("shared/navbarMobile.html").then((res) => res.text()),
+    fetch("shared/headerUser.html").then((res) => res.text()),
+  ]).then(([headerHtml, navbarHtml, headerUserHtml]) => {
+    const header = document.getElementById("header");
+    const navbarMobile = document.getElementById("navbarMobile");
+    const headerUser = document.getElementById("headerUser");
 
-  setTimeout(setupDropdowns, 0);
+    if (header) header.innerHTML = headerHtml;
+    if (navbarMobile) navbarMobile.innerHTML = navbarHtml;
+    if (headerUser) headerUser.innerHTML = headerUserHtml;
+
+    setTimeout(setupDropdowns, 0);
+  });
 });
 
 fetch("shared/footer.html")

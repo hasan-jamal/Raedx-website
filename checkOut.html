@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raedx</title>
+    <link rel="icon" href="./images/header-Images/RaedxLogo.svg">
+    <!---Style CSS-->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="./css/checkOutPage/checkOut.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbarMobile"></div>
+    <header id="header"></header>
+    <main>
+        <section class="sectionCheckout">
+            <div class="sectionCheckout-container">
+                <div class="d-flex fxCheckout">
+                    <div class="partOne">
+                        <h1 class="font-bold subtitle24px colorWhite">طرق الدفع الخاصة بك</h1>
+                        <div class="d-flex flex-column fxListCheckout ">
+                            <div class="boxPayment">
+                                <button class="d-flex justify-content-between btnCheckout">
+                                    <h3 class="subtitle16px colorWhite style-font">جوجل بلاي</h3>
+                                    <img src="./images/checkoutPage/arrowLeft.svg" alt="arrow Left icon">
+                                </button>
+                                <div class="contentPayment"></div>
+                            </div>
+                            <div class="boxPayment active">
+                                <button class="d-flex justify-content-between btnCheckout">
+                                    <h3 class="subtitle16px colorWhite style-font">بطاقة بنكية</h3>
+                                    <img src="./images/checkoutPage/arrowLeft.svg" alt="arrow Left icon">
+                                </button>
+                                <div class="contentPayment">
+                                    <div class="basic-container">
+                                        <div class="d-flex justify-content-between boxRadio">
+                                            <label for="option1" class="">
+                                                <div class="d-flex fxOne">
+                                                    <div class="d-flex fxTwo">
+                                                        <img src="./images/checkoutPage/imagePayment.svg"
+                                                            alt="image Payment">
+                                                        <span class="style-font colorWhite subtitle14px">اسم
+                                                            البنك</span>
+                                                    </div>
+                                                    <p class="mb-0 colorWhite interFont subtitle14px">**** **** ****
+                                                        4578</p>
+                                                </div>
+                                            </label>
+                                            <input type="radio" id="option1" name="basic" checked>
+                                        </div>
+                                        <div class="d-flex justify-content-between boxRadio">
+                                            <label for="option2" class="">
+                                                <div class="d-flex fxOne">
+                                                    <div class="d-flex fxTwo">
+                                                        <img src="./images/checkoutPage/VisaPayment.svg"
+                                                            alt="image Payment">
+                                                        <span class="style-font colorWhite subtitle14px">اسم
+                                                            البنك</span>
+                                                    </div>
+                                                    <p class="mb-0 colorWhite interFont subtitle14px">**** **** ****
+                                                        4521</p>
+                                                </div>
+                                            </label>
+                                            <input type="radio" id="option2" name="basic" checked>
+                                        </div>
+                                        <button class="addCardBtn d-flex align-items-end">
+                                            <img src="./images/checkoutPage/plusCard.svg" alt="plus Card icon">
+                                            <span class="colorWhite style-font subtitle16px">أضف بطاقة جديدة</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxPayment boxNewCard">
+                                <form action="" class="formCreate fxGeneral">
+                                    <div class="form-group w60 cardFlexStyle">
+                                        <label for="" class="colorWhite style-font">رقم البطاقة</label>
+                                        <div class="boxInputVisa d-flex">
+                                            <img src="./images/checkoutPage/VisaPayment.svg" alt="Visa Payment">
+                                            <input type="text" placeholder="1234 5678 1234 5678" class="colorWhite">
+                                        </div>
+                                    </div>
+                                    <div class="form-group w40 cardFlexStyle">
+                                        <label for="" class="colorWhite style-font">اسم حامل البطاقة</label>
+                                        <input type="text" placeholder="Ahmed Khaled" class="colorWhite inputDesign">
+                                    </div>
+                                    <div class="form-group w60 cardFlexStyle">
+                                        <label for="" class="colorWhite style-font">تاريخ الانتهاء</label>
+                                        <input type="text" placeholder="03/11" class="colorWhite inputDesign">
+                                    </div>
+                                    <div class="form-group w40 cardFlexStyle">
+                                        <label for="" class="colorWhite style-font">الرقم السري CVV</label>
+                                        <div class="boxInputIcon d-flex">
+                                            <input type="text" placeholder="959" class="colorWhite">
+                                            <img src="./images/checkoutPage/checkGreen.svg" alt="check Green icon">
+                                        </div>
+                                    </div>
+                                    <button class="btnLinear colorWhite w-100 h48px font-bold subtitle18px">أضف
+                                        بطاقة</button>
+                                </form>
+                            </div>
+                            <div class="boxPayment">
+                                <button class="addCardBtn d-flex align-items-end justify-content-center w-100">
+                                    <img src="./images/checkoutPage/plusCard.svg" alt="plus Card icon">
+                                    <span class="colorWhite style-font subtitle16px">أضف طريقة دفع</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partTwo">
+                        <div class="boxBudget d-flex boxStyle">
+                            <img src="./images/checkoutPage/closeBackGreen.svg" alt="close Background Green"
+                                class="closeBackGreen btn-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <rect width="40" height="40" rx="20" fill="url(#paint0_linear_1250_4241)" />
+                                <path
+                                    d="M30.002 20.0015C30.002 25.5243 25.5248 30.0015 20.002 30.0015C14.4791 30.0015 10.002 25.5243 10.002 20.0015C10.002 14.4786 14.4791 10.0015 20.002 10.0015C25.5248 10.0015 30.002 14.4786 30.002 20.0015ZM14.502 20.0015C14.502 23.039 16.9644 25.5015 20.002 25.5015C23.0395 25.5015 25.502 23.039 25.502 20.0015C25.502 16.9639 23.0395 14.5015 20.002 14.5015C16.9644 14.5015 14.502 16.9639 14.502 20.0015Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1250_4241" x1="20" y1="0" x2="20" y2="40"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2BFFFF" />
+                                        <stop offset="1" stop-color="#2BFFFF" stop-opacity="0.41" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="infoBudget">
+                                <span class="style-font colorWhite subtitle14px">خطة المؤسسات X1</span>
+                                <h2 class="interFont700 subtitle16px colorWhite">$20.00</h2>
+                            </div>
+                        </div>
+                        <div class="d-flex boxStyle align-items-center justify-content-between boxOffers">
+                            <h2 class="style-font subtitle16px colorWhite">العروض</h2>
+                            <a href="" class="colorGreen style-font subtitle12px btn-hover">أضف كود خصم</a>
+                        </div>
+                        <div class="boxStyle boxDetails">
+                            <h2 class="style-font subtitle16px colorWhite">تفاصيل المبيعات</h2>
+                            <div class="d-flex align-items-center justify-content-between details">
+                                <span class="style-font subtitle16px colorWhite">الطلب</span>
+                                <span class="style-font subtitle16px colorWhite">$20.00</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <span class="style-font subtitle16px colorWhite">الخصم</span>
+                                <span class="style-font subtitle16px colorWhite">$2.00</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between totalDetails">
+                                <span class="font-bold subtitle16px colorWhite">الإجمالي</span>
+                                <span class="font-bold subtitle16px colorWhite">$18.00</span>
+                            </div>
+                        </div>
+                        <button class="btnLinear colorWhite w-100 h48px font-bold subtitle18px">إتمام الدفع</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer"></footer>
+    <!-- Jquery Library -->
+    <script src="./js/jquery/jquery.min.js"></script>
+    <!--Navbar JS-->
+    <script src="./js/navbar-pages.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Fetch Data JS -->
+    <script src="./js/shared/fetchData.js"></script>
+    <!-- Animation JS -->
+    <script src="./js/shared/animation.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const boxes = document.querySelectorAll('.boxPayment');
+
+            boxes.forEach(box => {
+                const button = box.querySelector('.btnCheckout');
+
+                if (button) {
+                    button.addEventListener('click', () => {
+                        const isActive = box.classList.contains('active');
+
+                        boxes.forEach(b => b.classList.remove('active'));
+
+                        if (!isActive) {
+                            box.classList.add('active');
+                        }
+                        const newCardBox = document.querySelector('.boxNewCard');
+                        if (newCardBox) newCardBox.classList.remove('active');
+                    });
+                }
+            });
+
+            const addCardBtn = document.querySelector('.addCardBtn');
+            const boxNewCard = document.querySelector('.boxNewCard');
+
+            if (addCardBtn && boxNewCard) {
+                addCardBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    boxNewCard.classList.toggle('active');
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

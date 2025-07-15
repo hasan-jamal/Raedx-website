@@ -6,6 +6,22 @@
   font-family: 'Montserrat-Arabic';
   src: url(../fonts/Montserrat-Arabic-Regular.ttf);
 }
+@font-face {
+  font-family: 'Inter Bold';
+  src: url(../fonts/Inter/Inter-Bold.otf);
+}
+@font-face {
+  font-family: 'Inter Regular';
+  src: url(../fonts/Inter/Inter-Regular.otf);
+}
+@font-face {
+  font-family: 'Inter Medium';
+  src: url(../fonts/Inter/Inter-Medium.otf);
+}
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url(../fonts/Inter/Inter-SemiBold.otf);
+}
 :root {
   --font-size-143: 143px;
   --line-height-110: 110px;
@@ -26,6 +42,12 @@ body {
   font-size: 1rem;
 }
 main {position: relative;}
+main .topRight{
+    top:0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
 a, button {cursor: pointer;}
 a, .btn-hover {transition: 0.3s;cursor: pointer;}
 input:focus-visible {outline: none;}
@@ -80,6 +102,9 @@ p, button, a { font-size: 1rem; }
 .font-semiBold {font-family: "ExpoArabic";font-weight: 600;}
 .font-medium {font-family: 'ExpoArabic';font-weight: 500;}
 .font-ExtraBold {font-family: 'ExpoArabic';font-weight: 800;}
+.interFont{  font-family: 'Inter Regular';font-weight: 400;}
+.interFont700{  font-family: 'Inter Bold';font-weight: 700;}
+.interFont500{  font-family: 'Inter Medium';font-weight: 500;}
 .px-90 { padding: 0 90px; }
 .px-50 { padding: 0 50px; }
 .px-100 { padding: 0 100px; }
@@ -232,6 +257,8 @@ p, button, a { font-size: 1rem; }
 .subtitle22px {font-size: 22px;}
 .subtitle18px {font-size: 18px;}
 .subtitle16px {font-size: 16px;}
+.subtitle14px {font-size: 14px;}
+.subtitle12px {font-size: 12px;}
 .subtitle44px{font-size: 44px;}
 .subtitle32px{font-size: 32px;}
 .subtitle60px{font-size: 60px;}
@@ -257,7 +284,8 @@ p, button, a { font-size: 1rem; }
   .subtitle32px{font-size: 34px;}
   .subtitle64px {font-size: 68px;}
   .subtitle60px{font-size: 62px;}
-
+  .subtitle14px {font-size: 16px;}
+  .subtitle12px {font-size: 14px;}
 }
 @media (min-width:1920px) {
   .subtitle-one { font-size: 68px; line-height: 72px; }
@@ -281,6 +309,8 @@ p, button, a { font-size: 1rem; }
   .subtitle64px {font-size: 74px;}
   .subtitle32px{font-size: 37px;}
   .subtitle60px{font-size: 65px;}
+  .subtitle14px {font-size: 19px;}
+  .subtitle12px {font-size: 17px;}
 }
 @media (min-width:2048px) {
   .subtitle25px { font-size: 34px; }
@@ -293,6 +323,8 @@ p, button, a { font-size: 1rem; }
   .subtitle32px{font-size: 39px;}
   .subtitle64px {font-size: 78px;}
   .subtitle60px{font-size: 75px;}
+  .subtitle14px {font-size: 20px;}
+  .subtitle12px {font-size: 18px;}
 }
 @media (max-width:1396.36px) {
   .subtitle-one { font-size: 50px; line-height: 60px; }
@@ -335,6 +367,8 @@ p, button, a { font-size: 1rem; }
   .subtitle32px{font-size: 28px;}
   .subtitle64px {font-size: 56px;}
   .subtitle60px{font-size: 48px;}
+  .subtitle14px {font-size: 12px;}
+  .subtitle12px {font-size: 11px;}
 }
 @media (max-width:1024px) {
   .subtitle-one { font-size: 40px; line-height: 44.25px; }
@@ -356,6 +390,8 @@ p, button, a { font-size: 1rem; }
   .subtitle32px{font-size: 24px;}
   .subtitle64px {font-size: 48px;}
   .subtitle60px{font-size: 40px;}
+  .subtitle14px {font-size: 11px;}
+  .subtitle12px {font-size: 10px;}
 }
 @media (max-width:877.71px) {
   .subtitle-one { font-size: 35px; }
@@ -467,14 +503,14 @@ p, button, a { font-size: 1rem; }
   justify-content: center;
 }
 .coverBackground {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100vh;
-  z-index: 5000;
+  z-index: 99;
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -484,7 +520,10 @@ p, button, a { font-size: 1rem; }
   opacity: 1;
 }
 .colorGreen{color: #00C7B1;}
+.colorRed{color: #FF2B2B;}
+.colorYellow{color: #FFC107;}
 .colorWhite{color: #fff;}
+.colorWhite5{color: rgba(255, 255, 255, 0.5);}
 .numberLines {
   display: -webkit-box;
   /* -webkit-line-clamp: 4; */

@@ -1,0 +1,273 @@
+.sectionCheckout{
+    margin: 100px 0 150px 0;
+}
+.sectionCheckout .fxCheckout{
+    width: 70%;
+    margin: auto;
+    gap: 100px;
+}
+.sectionCheckout .fxCheckout .partOne{
+    width: 60%;
+}
+.sectionCheckout .fxCheckout .partOne h1{
+    margin-bottom: 32px;
+}
+.sectionCheckout .fxCheckout .partOne .fxListCheckout{gap: 24px;}
+.sectionCheckout .fxCheckout .partOne .boxPayment{
+    border-radius: 10px;
+    border: 1px solid #E7E9EB;
+    padding: 20px;
+    
+}
+.sectionCheckout .fxCheckout .partOne .boxPayment .contentPayment {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+.sectionCheckout .fxCheckout .partOne .boxPayment.active .contentPayment {
+    max-height: 100%;
+}
+.sectionCheckout .fxCheckout .partOne .boxPayment .btnCheckout img{
+        transition: transform 0.4s ease;    
+}
+.sectionCheckout .fxCheckout .partOne .boxPayment.active .btnCheckout img{
+    transform: rotate(-90deg);
+}
+.sectionCheckout .fxCheckout .partOne .boxNewCard {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+  padding: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.sectionCheckout .fxCheckout .partOne .boxNewCard.active {
+  max-height: 100%;
+  opacity: 1;
+  display: block;
+  padding: 20px;
+}
+.sectionCheckout .fxCheckout .partOne .btnCheckout{
+    width: 100%;
+    background: transparent;
+}
+.basic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 1rem;
+}
+.basic-container .boxRadio{
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: 1px solid #E7E9EB;
+}
+.basic-container input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00C7B1;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basic-container input[type="radio"]:checked {
+    border-color: #00C7B1;
+    background-color: transparent;
+}
+.basic-container input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color:rgba(0, 199, 177, 1);
+}
+.basic-container label {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 90%;
+}
+.basic-container label .fxOne{gap: 48px;}
+.basic-container label .fxTwo{gap: 10px;}
+.sectionCheckout .fxCheckout .partOne .addCardBtn{
+    background: none;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+.sectionCheckout .fxCheckout .partOne .addCardBtn:hover{
+    transform: scale(1.01);
+}
+.sectionCheckout .fxCheckout .partOne .w60{
+    flex: 1 1 calc(60% - 16px);
+    max-width: calc(60% - 0px);
+}
+.sectionCheckout .fxCheckout .partOne .w40{
+    flex: 1 1 calc(40% - 16px);
+    max-width: calc(40% - 0px);
+}
+.sectionCheckout .fxCheckout .partOne .formCreate{
+    gap: 1rem;
+}
+.sectionCheckout .fxCheckout .partOne .formCreate label{
+    display: block;
+    margin-bottom: 12px;
+}
+.sectionCheckout .fxCheckout .formCreate .inputDesign{width: 100%;}
+.sectionCheckout .fxCheckout .formCreate .inputDesign,
+.sectionCheckout .fxCheckout .formCreate .boxInputVisa,
+.sectionCheckout .fxCheckout .formCreate .boxInputIcon{
+    border-radius: 8px;
+    border: 2px solid rgba(0, 199, 177, 0.5);
+    padding:0px 18px 0 0px;
+    justify-content: space-between;
+    background: rgba(0, 199, 177, 0.20);
+
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputVisa{
+    gap: 12px;
+    align-items: center;
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputVisa img{
+    width: 33px;
+    height: 11px;
+    object-fit: contain;
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputVisa input{
+    width:-webkit-fill-available;
+    padding: 12px;
+    border-radius: 8px 0 0px 8px;
+    background: transparent;
+    font-family: 'Montserrat-Arabic';
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: -0.154px;
+     opacity: 0.5;
+}
+.sectionCheckout .fxCheckout .formCreate .inputDesign{
+    font-family: 'Montserrat-Arabic';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.154px;
+    padding: 12px 18px;
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputIcon{
+    gap: 12px;
+    align-items: center;
+    padding: 0;
+    padding-left: 1rem;
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputIcon input{
+    width: 78%;
+    padding: 12px 18px;
+    border-radius: 8px 0 0px 8px;
+    background: transparent;
+    font-family: 'Montserrat-Arabic';
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: -0.154px;
+}
+.sectionCheckout .fxCheckout .formCreate button{
+    margin-top: 11px;
+}
+.sectionCheckout .fxCheckout .partTwo{
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    padding: 40px 32px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.boxStyle{
+    gap: 13px;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.sectionCheckout .fxCheckout .partTwo .boxBudget span{margin-bottom: 4px;;display: block;}
+.sectionCheckout .fxCheckout .partTwo .boxBudget .closeBackGreen{
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+}
+.sectionCheckout .fxCheckout .partTwo .boxOffers a{
+  text-decoration: none; 
+  border-bottom: 2px dashed #00C7B1;
+}
+.sectionCheckout .fxCheckout .partTwo .boxDetails{
+    margin-bottom: 32px;
+}
+.sectionCheckout .fxCheckout .partTwo .boxDetails h2{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E7E9EB;
+    margin-bottom: 16px;
+}
+.sectionCheckout .fxCheckout .partTwo .boxDetails .details{
+    margin-bottom: 16px;
+}
+.sectionCheckout .fxCheckout .partTwo .boxDetails .totalDetails{
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #E7E9EB;
+}
+@media (min-width:1920px) {
+    .sectionCheckout .fxCheckout .partOne .fxListCheckout{gap: 32px;}
+    .basic-container{gap: 24px;}
+    .basic-container .boxRadio{padding: 18px 24px;}
+    .sectionCheckout .fxCheckout .partTwo .boxBudget span{margin-bottom: 12px;}
+    .sectionCheckout .fxCheckout .partTwo .boxBudget{align-items: center;}
+    .sectionCheckout .fxCheckout .partTwo .boxBudget svg{width: 60px;height: 60px;}
+    .boxStyle{padding: 24px;}
+}
+@media (min-width:2048px) {
+        .sectionCheckout .fxCheckout .partTwo .boxBudget svg{width: 70px;height: 70px;}
+}
+@media (max-width:1396.36px) {}
+.sectionCheckout .fxCheckout{gap: 80px;}
+@media (max-width:1228.8px) {
+    .sectionCheckout .fxCheckout{gap: 50px;width: 80%;}
+        .basic-container label .fxOne{gap: 32px;}
+}
+@media (max-width:1024px) {
+    .sectionCheckout .fxCheckout{gap: 32px;} 
+    .sectionCheckout .fxCheckout .partTwo .boxBudget svg{width: 30px;}
+    .sectionCheckout .fxCheckout .partOne .fxListCheckout{gap: 1rem;}
+    .sectionCheckout .fxCheckout .partOne .btnCheckout img{width: 7px;}
+    .boxStyle{gap: 8px;}
+    .basic-container label .fxOne{gap:24px;}
+}
+@media (max-width:877.71px) {
+    .sectionCheckout .fxCheckout{gap: 24px;width: 90%;}
+}
+@media (max-width:768px) {
+    .sectionCheckout-container{padding: 0 20px;}
+    .sectionCheckout .fxCheckout{width: 100%;}
+    .sectionCheckout{margin: 50px 0;}
+}
+@media (max-width:614.4px) {
+    .sectionCheckout .fxCheckout{flex-direction: column;}
+    .sectionCheckout .fxCheckout .partOne{width: 100%;}
+    .sectionCheckout .fxCheckout .partTwo{width: 100%;}
+    .basic-container label .fxOne{gap:1rem;}
+    .sectionCheckout .fxCheckout .partOne .boxPayment{padding: 14px;}
+    .sectionCheckout .fxCheckout .partOne .w60{
+    flex: 1 1 calc(100% - 16px);
+    max-width: calc(100% - 0px);
+    }
+    .sectionCheckout .fxCheckout .partOne .w40{
+        flex: 1 1 calc(100% - 16px);
+        max-width: calc(100% - 0px);
+    }
+    .sectionCheckout .fxCheckout .partOne .formCreate label{margin-bottom: 6px;}
+    .sectionCheckout .fxCheckout .partOne .btnCheckout .subtitle16px{font-size: 14px;}
+}

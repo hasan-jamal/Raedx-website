@@ -1,0 +1,25 @@
+.section404{margin: 85px 0 150px 0;}
+.section404 .fxSection404{gap: 32px;}
+.section404 img{
+    margin: auto;
+    display: block;
+    padding-right: 4rem;
+}
+.section404 h1{
+    font-size: 80px;
+}
+@media (max-width:1024px) {
+    .section404 h1{font-size: 70px;}
+}
+@media (max-width:877.71px) {
+    .section404 h1{font-size: 60px;}
+}
+@media (max-width:614.4px) {
+    .section404{padding: 0 20px;margin: 60px 0 120px 0;}
+    .section404 .fxSection404{gap: 24px;}
+    .section404 img{
+        padding-right: 2rem;
+        width: 100%;
+    }
+    .section404 h1{font-size: 32px;}
+}
