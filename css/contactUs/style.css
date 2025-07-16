@@ -1,0 +1,114 @@
+.contactPage{
+    margin: 88px 0;
+}
+.contactPage .boxContact{
+    position: relative;
+    padding: 70px 58px;
+ background-image: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
+
+    border: 1px solid #00C7B1;
+    border-radius: 12px;
+}
+.contactPage .boxContact .topRight{width:300px;}
+.contactPage .boxContact .divTitle{
+    position: relative;
+    z-index: 1; 
+    padding-bottom: 1rem;
+    margin-bottom: 2.2rem;
+}
+.contactPage .boxContact .divTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.contactPage .boxContact .divTitle p{color: rgba(255, 255, 255, 0.88);}
+.contactPage .boxContact form h2{
+    margin-bottom: 24px;
+}
+.contactPage .boxContact .fxInputs{
+    gap: 24px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1; 
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+.contactPage .boxContact .fxInputs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.contactPage .boxContact .fxInputs .form-group{
+    width: 48%;
+}
+.contactPage .boxContact .fxInputs .form-group input{width: 100%;}
+.contactPage .boxContact label{margin-bottom: 1rem;display: block;}
+.contactPage .boxContact textarea{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    opacity: 0.5;
+    height: 183px;
+    background: rgba(0, 199, 177, 0.20);
+}
+.contactPage .boxContact .btnBlack{margin: 24px 0 0 0;}
+.contactPage .boxContact #fileList{margin:1rem 0 40px 0;overflow: hidden;}
+.contactPage .boxContact #fileList button {
+    display: block;
+    background: #008979;
+    position: relative;
+    z-index: 999;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactPage .boxContact #fileList button img {
+    width: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(79%) saturate(51%) hue-rotate(216deg) brightness(121%) contrast(100%);
+}
+.contactPage .boxContact .btnLinear{
+    width: 30%;
+    margin: auto;
+}
+@media (max-width:1228.8px) {
+    .contactPage .boxContact{padding: 60px 40px;}
+}
+@media (max-width:1024px) {
+    .contactPage .boxContact{padding: 50px 32px;}
+    .contactPage .boxContact .fxInputs{gap: 20px;}
+    .contactPage{margin: 50px 0;}
+}
+@media (max-width:877.71px) {
+    .contactPage .boxContact{padding: 40px 24px;}
+    .contactPage .boxContact .btnBlack{margin: 1rem 0 0 0;}
+    .contactPage .boxContact #fileList{margin:1rem 0 24px 0;}
+}
+@media (max-width:614.4px) {
+    .contactPage .boxContact .fxInputs .form-group{width: 100%;}
+    .contactPage .boxContact .fxInputs{gap: 1rem;}
+    .contactPage .boxContact .btnLinear img{width: 15px;}
+    .contactPage{margin: 32px 0;}
+    .contactPage .boxContact #fileList{margin:8px 0 1.5rem 0;}
+}

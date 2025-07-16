@@ -22,6 +22,22 @@
   font-family: 'Inter SemiBold';
   src: url(../fonts/Inter/Inter-SemiBold.otf);
 }
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: 'Inter Regular';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: 'Inter Medium';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
 :root {
   --font-size-143: 143px;
   --line-height-110: 110px;
@@ -76,6 +92,7 @@ p, button, a { font-size: 1rem; }
 .w-100 { width: 100%; }
 .fxWrap{flex-wrap: wrap;}
 .text-start { text-align: start !important; }
+.justify-content-end { justify-content: end !important; }
 .justify-content-center { justify-content: center !important; }
 .justify-content-between { justify-content: space-between !important; }
 .pe-2 { padding-right: 8px; }
@@ -203,6 +220,11 @@ p, button, a { font-size: 1rem; }
   border: 2px solid #00C7B1;
   background: linear-gradient(93deg, rgba(0, 199, 177, 0.20) -4%, rgba(3, 71, 123, 0.20) 70.58%);
   color: #00C7B1;
+}
+.btnBlack{
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 /* End Buttons Style */
 .subtitle-one {
@@ -559,7 +581,7 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
 .h48px{height: 48px;}
 .h44px{height: 44px;}
 .divTitle{
-  width: 65%;
+  width: 75%;
   margin: auto;
 }
 .divTitle h1{
@@ -584,6 +606,13 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
   opacity: 1;
   transform: translateY(0);
 }
+.inputGeneral{
+  border-radius: 8px;
+  border: 2px solid #00C7B1;
+  background: rgba(0, 199, 177, 0.20);
+  padding: 0 1rem;
+}
+
 @media (min-width:1706.67px) {
   .pagination button {width: 60px;height: 60px;}
   .h48px{height: 52px;}
@@ -594,15 +623,14 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
   .h48px{height: 58px;}
   .h44px{height: 56px;}
   .btnLinear img{width: 35px;}
+  .inputGeneral{padding: 0 1.5rem;}
 }
 @media (min-width:2048px) {
   html {width: 2050px;margin: auto;}
   .h48px{height: 68px;}
   .h44px{height: 66px;}
 }
-@media (min-width:2304px) {
-  
-}
+@media (min-width:2304px) {}
 @media (max-width:1396.36px) {
   .h48px{height: 45px;}
   .h44px{height: 42px;}
@@ -614,6 +642,7 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
   .h44px{height: 40px;}
   .pagination button img {width: 8px;}
   .divTitle{width: 70%;}
+  .inputGeneral{padding: 0 0.7rem;}
 }
 @media (max-width:1024px) {
   .h48px,
@@ -622,6 +651,7 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
 @media (max-width:877.71px) {
   .h48px,
   .h44px{height: 35px;}
+  .inputGeneral{padding: 0 0.5rem;}
 }
 @media (max-width:768px) {
 

@@ -352,6 +352,7 @@
    z-index: -1;
    object-fit: contain;
 }
+.homeS5 .backHomeS5 .bannerSectionMb{display: none;}
 .homeS5 .divText{
  padding: 10rem 56px 0 56px;
  width: 60%;
@@ -404,12 +405,30 @@
 }
 @media (max-width:614.4px) {
     .homeS5 .divText{width: 100%;}
-    .homeS5 .backHomeS5{height: 100%;}
-    .homeS5 .backHomeS5 .bannerSection{
-        object-fit: cover;
+
+    .homeS5 .backHomeS5 .bannerSection{ object-fit: cover;display: none;}
+    .homeS5 .backHomeS5{ height: 70vh;}
+    .homeS5 .backHomeS5 .bannerSectionMb{
+        display: block;
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
-    .homeS5 .divText {padding: 5rem 1rem 0 1rem;}
-    .homeS5 .divText h1{font-size: 20px;width: 70%;font-weight: 600;margin-bottom: 12px;}
+    .homeS5 .divText {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 0 1.5rem 1rem 1.5rem;
+        color: white;
+    }
+    .homeS5 .divText p{margin-bottom: 12px;font-size: 15px;}
+    .homeS5 .divText h1{font-size: 16px;width: 100%;font-weight: 600;margin-bottom: 12px;}
+    .homeS5 .divText button{width: max-content;gap: 5px;}
 }
 /* Home Section 6 Style */
 .homeS6{margin-bottom: 120px;}

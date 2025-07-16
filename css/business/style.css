@@ -1,0 +1,400 @@
+.investmentSectionS1{
+    
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 0 15rem 0;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+main .newBackground{
+    background-position: left;
+    background-size: contain;
+}
+.investmentSectionS1:after{
+    content: "";
+    background: linear-gradient(270deg, #000 26.81%, rgba(0, 0, 0, 0.00) 99.77%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.investmentSectionS1 .divText{
+    width:65%;
+}
+.investmentSectionS1 .divText h1{margin-bottom: 18px;line-height: 150%;}
+.investmentSectionS1 .divText p{
+    margin-bottom: 24px;
+    line-height: 140%;
+    width: 80%;
+}
+.investmentSectionS1 .divText .lastDiv{gap: 24px;}
+@media (max-width:1228.8px) {
+    .investmentSectionS1{padding: 8rem 0 10rem 0;}
+}
+@media (max-width:1024px) {
+    .investmentSectionS1{padding: 6rem 0 10rem 0;}
+}
+@media (max-width:877.71px) {
+    .investmentSectionS1{padding: 4rem 0 10rem 0;}
+}
+@media (max-width:614.4px) {
+    .investmentSectionS1{padding: 5rem 0 15rem 0;}
+    .investmentSectionS1 .divText{width: 100%;}
+    .investmentSectionS1 .divText p{width: 100%;}
+    main .newBackground{background-size: cover;}
+}
+@media (max-width:512px) {}
+/* Home Section 4 Style */
+.investmentSectionS2{margin-bottom: 100px;}
+.investmentSectionS2 .fxGeneral{
+    gap: 93px;
+    align-items: normal;
+    margin-top: 54px;
+    margin-bottom: 32px;
+}
+.fxCardsTeam .cardFlexStyle{
+    flex: 1 1 calc(33.3% - 93px);
+    max-width: calc(33.3% - 0px);
+}
+.cardUser{
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.cardUser .userImage{
+    width: 86px;
+    height: 86px;
+    border-radius: 86px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+}
+.cardUser h2{
+    letter-spacing: -0.264px;
+    margin-bottom: 10px;
+}
+.cardUser p{
+    margin-bottom: 36px;
+    opacity: 0.7;
+}
+.cardUser .flexDetails{
+    justify-content: space-around;
+}
+.cardUser .flexDetails .divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardUser .flexDetails .divInfo h4{
+    opacity: 0.5;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.investmentSectionS2 .box{
+    padding: 32px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #00C7B1;
+    background: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
+}
+.investmentSectionS2 .box .fxBtnsBox{gap: 32px;}
+.investmentSectionS2 .box .fxBtnsBox a{
+    text-decoration: none;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+.investmentSectionS2 .box .fxBtnsBox a:hover,
+.investmentSectionS2 .box .fxBtnsBox a:hover span{
+    font-weight: 600;
+    opacity: 1;
+}
+
+@media (min-width:1706.67px) {
+    .fxCardsTeam .cardFlexStyle{padding: 32px;}
+    .cardUser .flexDetails .divInfo h4{font-size: 14px;}
+}
+@media (min-width:1920px) {
+    .fxCardsTeam .cardFlexStyle{padding: 40px;}
+    .cardUser .flexDetails .divInfo h4{font-size: 17px;margin-bottom: 12px;}
+    .cardUser p{margin-bottom: 48px;}
+    .investmentSectionS2 .box{padding: 40px;}
+}
+@media (max-width:1396.36px) {
+    .investmentSectionS2 .fxGeneral{gap: 75px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 75px);
+        max-width: calc(33.3% - 0px);
+    }
+}
+@media (max-width:1228.8px) {
+    .investmentSectionS2 .fxGeneral{gap: 55px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 55px);
+        max-width: calc(33.3% - 0px);
+    }
+}
+@media (max-width:1024px) {
+    .investmentSectionS2 .fxGeneral{gap: 32px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 32px);
+        max-width: calc(33.3% - 0px);
+    }
+    .investmentSectionS2 .box{padding: 24px;}
+    .investmentSectionS2 .box .fxBtnsBox{gap: 24px;}
+    .investmentSectionS2 .fxGeneral{margin-top: 32px;}
+}
+@media (max-width:877.71px) {
+    .investmentSectionS2 .fxGeneral{gap: 24px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 24px);
+        max-width: calc(33.3% - 0px);
+    }
+    .investmentSectionS2 .box{padding: 16px;}
+    .investmentSectionS2 .box .fxBtnsBox{gap: 16px;}
+    .cardUser{padding: 16px;}
+    .investmentSectionS2 .fxGeneral{margin-top: 24px;}
+}
+@media (max-width:768px) {
+    .investmentSectionS2 .fxGeneral{gap: 16px;}
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(33.3% - 16px);
+        max-width: calc(33.3% - 0px);
+    }
+    .cardUser .flexDetails{justify-content: space-between;}
+}
+@media (max-width:614.4px) {
+    .fxCardsTeam .cardFlexStyle{
+        flex: 1 1 calc(90% - 16px);
+        max-width: calc(90% - 0px);
+        margin: auto;
+    }
+    .investmentSectionS2 .box h3{line-height: 150%;}
+    .investmentSectionS2 .box{flex-direction: column;gap: 24px;}
+
+}
+
+
+.investmentSectionS3{margin-bottom: 120px;}
+.investmentSectionS3 .fxButtons{gap: 1rem;margin-top: 32px;}
+@media (max-width:1024px) {
+    .investmentSectionS3 .fxButtons{gap: 1rem;margin-top: 24px;}
+}
+@media (max-width:614.4px) {
+    .investmentSectionS3{margin-bottom: 80px;}
+}
+
+
+/* Home Section 6 Style */
+.investmentSectionS4{margin-bottom: 120px;}
+.investmentSectionS4 .fxInvestmentSectionS4{
+    align-items: end;
+    margin-top: 40px;
+    gap: 90px;
+}
+.investmentSectionS4 .fxInvestmentSectionS4 .divImage{
+    width: 60%;
+}
+.investmentSectionS4 .fxInvestmentSectionS4 .divImage img{
+    width: 100%;
+    object-fit: cover;
+}
+.investmentSectionS4 .divText h1{
+    background: linear-gradient(180deg, #FFF 30%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2.4px;
+    margin-bottom: 24px;
+    width: 85%;
+}
+.investmentSectionS4 .divText p{
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 150%;
+    margin-bottom: 32px;
+    width: 85%;
+}
+.investmentSectionS4 .divText .fxText{
+    gap: 50px;
+    margin-bottom: 24px; 
+    align-items: baseline;
+}
+.investmentSectionS4 .divText .fxText .fxTextPart{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.investmentSectionS4 .divText .fxText .fxTextPart span{
+    color: rgba(255, 255, 255, 0.68);
+}
+.investmentSectionS4 .divText .fxText .fxTextPart h2{
+    background: linear-gradient(180deg, #FFF 30%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.investmentSectionS4 .divText .fxButtons{
+    gap: 32px;
+}
+.investmentSectionS4 .divText .fxButtons a{text-decoration: none;}
+@media (max-width:1396.36px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{gap: 80px;}
+}
+@media (max-width:1228.8px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{gap: 60px;}
+}
+@media (max-width:1024px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{gap: 48px;}
+}
+@media (max-width:877.71px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{gap: 32px;}
+    .investmentSectionS4 .divText h1{width: 75%; }
+    .investmentSectionS4 .divText p{width: 75%;}
+    .investmentSectionS4 .fxInvestmentSectionS4{margin-top: 32px;}
+}
+@media (max-width:768px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{gap: 24px;}
+    .investmentSectionS4 .fxInvestmentSectionS4{margin-top: 24px;}
+}
+@media (max-width:614.4px) {
+    .investmentSectionS4 .fxInvestmentSectionS4{flex-direction: column;}
+    .investmentSectionS4 .fxInvestmentSectionS4 .divImage{width: 100%;}
+    .investmentSectionS4 .divText h1{width: 100%; }
+    .investmentSectionS4 .divText p{width: 100%;}
+    .investmentSectionS4 .divText .fxText{gap: 1.5rem;}
+    .investmentSectionS4 .fxInvestmentSectionS4{margin-top: 40px;}
+    .investmentSectionS4 .divText .fxText .fxTextPart h2{font-size: 24px;}
+    .investmentSectionS4{margin-bottom: 100px;}
+}
+.investmentSectionS5{margin-bottom: 140px;}
+.investmentSectionS5 .fxText{
+    margin-top: 60px;
+    gap: 50px;
+    justify-content: space-around;
+}
+.investmentSectionS5 .fxText .fxTextPart{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.investmentSectionS5 .fxText .fxTextPart span{
+    color: rgba(255, 255, 255, 0.68);
+}
+.investmentSectionS5 .fxText .fxTextPart h2{
+    background: linear-gradient(180deg, #FFF 30%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width:614.4px) {
+    .investmentSectionS5 .fxText{gap: 1.5rem;}
+    .investmentSectionS5 .fxText .fxTextPart h2{font-size: 24px;}
+}
+
+/* Investment Section 6 Style */
+.investmentSectionS6{margin-bottom: 100px;}
+.investmentSectionS6 .backInvestmentSectionS6{
+    position: relative;
+    height: 100%;
+}
+.investmentSectionS6 .backInvestmentSectionS6 .bannerSection{
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   object-fit: contain;
+}
+.investmentSectionS6 .backInvestmentSectionS6 .bannerSectionMb{display: none;}
+.investmentSectionS6 .divText{
+ padding: 5.5rem 2.5rem 2.5rem 2.5rem;
+ width: 60%;
+} 
+.investmentSectionS6 .divText h1{
+    line-height: 135%;
+    margin-bottom: 18px;
+    -webkit-line-clamp: 1;
+}
+.investmentSectionS6 .divText p{
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 130.769%;
+    margin-bottom: 24px;
+    -webkit-line-clamp: 2;
+}
+.investmentSectionS6 .divText button{
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+.investmentSectionS6 .divText button:hover{background: #00C7B1;}
+.investmentSectionS6 .divText button:hover span{color: #fff;}
+.investmentSectionS6 .divText button:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.investmentSectionS6 .divText button img{
+    filter: brightness(0) saturate(100%) invert(70%) sepia(41%) saturate(6222%) hue-rotate(133deg) brightness(96%) contrast(103%);
+}
+.newSectionS6 .divText{
+     padding:8.5rem 2.5rem 2.5rem 2.5rem;
+}
+@media (min-width:1706.67px) {
+    .investmentSectionS6 .divText h1{margin-bottom: 24px;}
+    .investmentSectionS6 .divText{padding: 6.5rem 2.5rem 2.5rem 2.5rem;}
+}
+@media (min-width:1920px) {
+    .investmentSectionS6 .divText h1{margin-bottom: 32px;}
+    .investmentSectionS6 .divText{padding: 7.5rem 2.5rem 2.5rem 2.5rem;}
+}
+@media (min-width:2048px) {
+    .investmentSectionS6 .divText{padding: 8.5rem 2.5rem 2.5rem 2.5rem;}
+}
+@media (max-width:1024px) {
+    .investmentSectionS6 .divText {padding: 6.5rem 2rem 2rem 2rem;}
+}
+@media (max-width:877.71px) {
+    .investmentSectionS6 .divText {padding: 5.5rem 2rem 2rem 2rem;}
+    .investmentSectionS6 .divText h1{margin-bottom: 14px;}
+    .investmentSectionS6 .divText p{margin-bottom: 14px;}
+}
+@media (max-width:768px) {
+    .investmentSectionS6 .divText {padding: 4.5rem 2rem 2rem 2rem;}
+    .investmentSectionS6 .divText h1{margin-bottom: 8px;}
+}
+@media (max-width:614.4px) {
+    .investmentSectionS6 .backInvestmentSectionS6{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .investmentSectionS6 .backInvestmentSectionS6 .bannerSectionMb{
+        display: block;
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      object-fit: contain;
+        z-index: -1;
+    }
+    .investmentSectionS6 .backInvestmentSectionS6 .bannerSection{display: none;}
+    .investmentSectionS6 .divText {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        padding: 3rem 1.5rem 1rem 1.5rem;
+        color: white;
+    }
+    .investmentSectionS6 .divText p{margin-bottom: 24px;font-size: 16px;}
+    .investmentSectionS6 .divText h1{font-size: 16px;width: 100%;font-weight: 600;margin-bottom: 12px;}
+    .investmentSectionS6 .divText button{width: 120px;gap: 5px;justify-content: center;height: 44px;}
+    .investmentSectionS6 .divText button span{font-size: 15px;}
+}
