@@ -1,11 +1,10 @@
 .investmentSectionS1{
-    
     background-position: center;
     background-size: cover;
     padding: 10rem 0 15rem 0;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 2;
+    z-index: 0;
 }
 main .newBackground{
     background-position: left;

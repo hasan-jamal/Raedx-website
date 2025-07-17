@@ -27,15 +27,15 @@
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
 }
 @font-face {
-  font-family: 'Inter Regular';
+  font-family: 'Montserrat Regular';
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: 'Inter Medium';
+  font-family: 'Montserrat Medium';
   src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 @font-face {
-  font-family: 'Inter SemiBold';
+  font-family: 'Montserrat SemiBold';
   src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
 :root {
@@ -58,11 +58,17 @@ body {
   font-size: 1rem;
 }
 main {position: relative;}
-main .topRight{
+main .circleBlue{
     top:0;
     left: 0;
     position: absolute;
     z-index: -1;
+    border-radius: 410px;
+    background: rgba(3, 71, 123, 0.55);
+    filter: blur(287px);
+    border-radius: 0 50px 50px 0;
+    width: 387px;
+    height: 287px;
 }
 a, button {cursor: pointer;}
 a, .btn-hover {transition: 0.3s;cursor: pointer;}
@@ -84,6 +90,7 @@ p, button, a { font-size: 1rem; }
 .gap-3 { gap: 1rem !important; }
 .gap-4 { gap: 1.5rem !important; }
 .gap-5 { gap: 3rem !important; }
+.bg-0{background: none;}
 .mx-auto { margin-left: auto !important; margin-right: auto !important; }
 .d-flex { display: flex !important; }
 .align-items-center { align-items: center !important; }
@@ -132,6 +139,8 @@ p, button, a { font-size: 1rem; }
 .opacity5{opacity: 0.5;}
 .w190 { width: 190px; }
 .h54px { height: 54px; }
+.mt60px{margin-top: 60px;}
+.gap32px{gap: 32px;}
 @media (min-width:1920px) {
   .px-120 { padding: 0 140px; }
   .px-138px { padding: 0 158px; }
@@ -140,6 +149,7 @@ p, button, a { font-size: 1rem; }
   .w190 { width: 210px; }
   .h54px { height: 64px; }
   .px-23px { padding: 0 28px; }
+  .mt60px{margin-top: 80px;}
 }
 @media (max-width:1396.36px) {
   .px-120 { padding: 0 100px; }
@@ -151,6 +161,7 @@ p, button, a { font-size: 1rem; }
   .px-23px { padding: 0 20px; }
   .h54px { height: 48px; }
   .px-138px { padding: 0 118px; }
+  .mt60px{margin-top: 50px;}
 }
 @media (max-width:1228.8px) {
   .px-120 { padding: 0 40px; }
@@ -161,6 +172,7 @@ p, button, a { font-size: 1rem; }
   .px-23px { padding: 0 18px; }
   .h54px { height: 44px; }
   .px-138px { padding: 0 60px; }
+  .mt60px{margin-top: 40px;}
 }
 @media (max-width:1024px) {
   .px-90 { padding: 0 30px; }
@@ -168,12 +180,14 @@ p, button, a { font-size: 1rem; }
   .h54px { height: 40px; }
   .px-138px { padding: 0 30px; }
   .px-23px { padding: 0 1rem; }
+.mt60px{margin-top: 32px;}
 }
 @media (max-width:877.71px) {
   .px-80 { padding: 0 30px; }
   .px-120 { padding: 0 30px; }
   .px-100 { padding: 0 40px; }
   .px-50 { padding: 0 25px; }
+  .mt60px{margin-top: 24px;}
 }
 
 @media (max-width:768px) {
