@@ -2,5 +2,12 @@
 .font-bold {  font-family: 'Montserrat Bold' !important;}
 .font-semiBold {font-family: 'Montserrat SemiBold' !important;}
 .font-medium {font-family: 'Montserrat Medium' !important; }
+.font-medium {font-family: 'Montserrat Medium' !important; }
+.font-ExtraBold {font-family: 'Montserrat ExtraBold';;font-weight: 900;}
 .sectionForm .boxForm .fxButtonsSteps .btnLinear img,
 header .fxHeader .publicStyleList button img{transform: rotate(180deg);}
+.sidenav-active nav{left: 0;right: auto;}
+.nav-mobile {
+  right: auto;
+  left: -100%;
+}

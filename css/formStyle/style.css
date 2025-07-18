@@ -1,5 +1,5 @@
 .sectionForm{
-    margin: 88px 0 126px 0;
+    margin: 50px 0 100px 0;
 }
 .sectionForm .boxForm{
     padding: 70px 60px;
@@ -109,7 +109,6 @@
 .sectionForm .boxForm .basic-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 .sectionForm .boxForm .basic-container input[type="radio"] {
     appearance: none;
@@ -117,7 +116,6 @@
     height: 24px;
     border: 2px solid rgba(0, 199, 177, 1);
     border-radius: 50%;
-    margin-right: 10px;
     position: relative;
     cursor: pointer;
     vertical-align: middle;
@@ -141,18 +139,18 @@
 .sectionForm .boxForm .basic-container label {
     font-weight: 500;
     cursor: pointer;
-    padding-left: 5px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sectionForm .boxForm .basic-container input[type="radio"]:checked + label {
     color: rgba(0, 199, 177, 1);
 }
 .sectionForm .boxForm .titleForm{
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
     display: block;
 }
 .sectionForm .boxForm .boxInputStyle{
     border-radius: 12px;
+    gap: 12px;
     padding: 24px;
     border: 1px solid #00C7B1;
     background: linear-gradient(180deg, rgba(0, 199, 177, 0.10) 0%, rgba(0, 199, 177, 0.00) 100%);
@@ -164,6 +162,7 @@
     background: rgba(0, 199, 177, 0.20);
     padding: 0 1rem;
 }
+.sectionForm .boxForm form .inputGreen:focus{opacity: 1;}
 .sectionForm .boxForm .btnAddNew{
     border-radius: 10px;
     border: 1px solid #E7E9EB;
@@ -188,3 +187,139 @@
 .sectionForm .boxForm .fxSelectBtn button:hover{
     border: 1px solid #fff;
 }
+.sectionForm .boxForm .gap18px{gap: 18px;}
+.sectionForm .boxForm .w70{
+    flex: 1 1 calc(70% - 18px);
+    max-width: calc(70% - 0px);
+}
+.sectionForm .boxForm .w30{
+    flex: 1 1 calc(30% - 18px);
+    max-width: calc(30% - 0px);
+}
+.sectionForm .boxForm .boxInput{
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    background: rgba(0, 199, 177, 0.20);
+    gap: 6px;
+    justify-content: space-between;
+}
+.sectionForm .boxForm .boxInput:focus-within{opacity: 1;}
+.sectionForm .boxForm .boxInput input{
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    height: 100%;
+    padding: 0;
+}
+.sectionForm .boxForm .divPartOne{
+  position: relative;
+  z-index: 1; 
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.sectionForm .boxForm .divPartOne::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.sectionForm .boxForm .divPartTwo{
+    position: relative;
+    z-index: 1; 
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+.sectionForm .boxForm .divPartTwo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.0)
+  );
+  z-index: -1;
+}
+.sectionForm .boxForm .divPartTwo .fxTitlesTable h2{
+    width: 21%;
+}
+.sectionForm .boxForm .divPartTwo .question h2{
+    width: 55%;
+}
+.sectionForm .boxForm .divPartTwo .fxQuestion{
+    width: 45%;
+}
+.sectionForm .boxForm .divPartTwo .question .boxInput{
+    width: 50%;
+}
+.sectionForm .boxForm .lastDiv {display: flex;}
+.hidden {
+    display: none !important;
+}   
+@media (min-width:1706.67px) {
+    .sectionForm .boxForm .fxButtonsSteps .btnLinear{width: 370px;}
+}
+@media (min-width:1920px) {
+    .sectionForm .boxForm .basic-container input[type="radio"] {width: 32px;height: 32px;}
+    .sectionForm .boxForm .basic-container input[type="radio"]:checked::after{width: 1rem;height: 1rem;}
+     .sectionForm .boxForm .fxButtonsSteps .btnLinear{width: 420px;}
+     .sectionForm{margin: 80px 0 130px 0;}
+     .sectionForm .boxForm .boxInputStyle{gap: 1rem;}
+}
+@media (min-width:2048px) {}
+@media (min-width:2304px) {}
+@media (min-width:3072px) {}
+@media (max-width:1396.36px) {
+    .sectionForm .boxForm{padding: 60px 50px;}
+}
+@media (max-width:1228.8px) {
+    .sectionForm .boxForm{padding: 50px 40px;}
+    .sectionForm .boxForm .boxInputStyle{padding: 20px;}
+    .sectionForm .boxForm .basic-container input[type="radio"] {width: 20px;height: 20px;}
+    .sectionForm .boxForm .basic-container input[type="radio"]:checked::after{width: 8px;height: 8px;}
+}
+@media (max-width:1024px) {
+    .sectionForm .boxForm{padding: 40px 32px;}
+    .sectionForm .boxForm .boxInputStyle{padding: 1rem;}
+    .sectionForm .boxForm .basic-container input[type="radio"] {width: 1rem;height: 1rem;}
+    .sectionForm .boxForm .basic-container input[type="radio"]:checked::after{width: 6px;height: 6px;}
+    .sectionForm .boxForm .boxInputStyle{gap: 8px;}
+}
+@media (max-width:877.71px) {
+    .sectionForm .boxForm{padding: 32px 24px;}
+}
+@media (max-width:768px) {
+    .sectionForm .boxForm{padding: 1.5rem 1rem;}
+    .sectionForm .boxForm .divTitle{width: 50%;}
+    .sectionForm .boxForm .boxInputStyle{gap: 6px;}
+}
+@media (max-width:614.4px) {
+    .sectionForm .boxForm .divTitle{width: 100%;}
+    .sectionForm .boxForm .headTitle{flex-direction: column;gap: 1rem;}
+    .sectionForm .boxForm .dash-lines .line.active{width: 1.5rem;}
+    .sectionForm .boxForm .dash-lines .line{width: 1rem;}
+    .sectionForm .boxForm .lastDiv {flex-direction: column;gap: 1.5rem;}
+    .sectionForm .boxForm .fxButtonsSteps .btnLinear {width: 128px;}
+    .sectionForm .boxForm .fxSelectBtn{flex-wrap: wrap;justify-content: center;}
+    .sectionForm .boxForm .fxSelectBtn button{width: 47%;}
+    .sectionForm .boxForm .divPartTwo .question{gap: 8px;}
+    .sectionForm .boxForm .divPartTwo .question h2 {width: 40%;line-height: 150%;}
+    .sectionForm .boxForm .divPartTwo .fxQuestion{width: 60%;}
+    .sectionForm .boxForm .divPartTwo .fxTitlesTable h2 {width: 27%;font-size: 10px;}
+     .sectionForm .boxForm .divPartFour .btnLinear {width: 70%;}
+    .sectionForm{margin:24px 0 70px 0;}
+}
+@media (max-width:512px) {}

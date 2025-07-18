@@ -121,7 +121,6 @@
 .nav-mobile .btnDropdown.active {
   padding-bottom: 8px;
 }
-/* اختياري: تدوير السهم */
 .nav-mobile .btnDropdown.active .arrowDown {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
