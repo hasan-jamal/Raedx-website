@@ -149,6 +149,7 @@ p, button, a { font-size: 1rem; }
 .mt60px{margin-top: 60px;}
 .mt45px{margin-top: 45px;}
 .mt24px{margin-top: 1.5rem;}
+.mt1rem{margin-top: 1rem;}
 .mt32px{margin-top: 2rem;}
 .mb24px{margin-bottom: 1.5rem;}
 .gap32px{gap: 2rem;}
@@ -169,6 +170,7 @@ p, button, a { font-size: 1rem; }
   .mb24px{margin-bottom: 2rem;}
   .gap32px{gap: 2.5rem;}
   .gap24px{gap: 2rem;}
+  .mt1rem{margin-top: 1.5rem;}
 }
 @media (max-width:1396.36px) {
   .px-120 { padding: 0 100px; }
@@ -206,6 +208,7 @@ p, button, a { font-size: 1rem; }
   .mb24px{margin-bottom: 1rem;}
   .gap32px{gap: 1.5rem;}
   .gap24px{gap: 1rem;}
+  .mt1rem{margin-top: 0.8rem;}
 }
 @media (max-width:1024px) {
   .px-90 { padding: 0 30px; }

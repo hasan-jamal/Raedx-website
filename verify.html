@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raedx</title>
+    <link rel="icon" href="./images/header-Images/RaedxLogo.svg">
+    <!---Style CSS-->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="./css/authPages/auth.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-mobile">
+        <div class=" align-items-center  justify-content-between  flex-head">
+            <a href="index.html"><img src="./images/header-Images/RaedxLogo.svg" class="logo-image" /></a>
+        </div>
+    </div>
+    <header>
+        <div class="header-container px-138px">
+            <div class="d-flex align-items-center justify-content-between fxHeader">
+                <a class="divImage" href="./index.html"><img src="./images/header-Images/RaedxLogo.svg"
+                        alt="Raedx Logo image"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="authCard">
+            <div class="authCard-container">
+                <div class="divTitleCard">
+                    <h1 class="subtitle24px font-medium colorWhite">Verify Your Account</h1>
+                    <p class="colorWhite subtitle14px font-medium opacity5">Last step before starting your journey</p>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="" class="colorWhite font-medium subtitle14px d-block">Enter Your Code Send By
+                            Email</label>
+                        <div class="d-flex fxVerifyInputs justify-content-between">
+                            <input type="number"
+                                class="verify-input inputGeneral subtitle20px colorWhite font-medium opacity5 h48px"
+                                maxlength="1">
+                            <input type="number"
+                                class="verify-input inputGeneral subtitle20px colorWhite font-medium opacity5 h48px"
+                                maxlength="1">
+                            <input type="number"
+                                class="verify-input inputGeneral subtitle20px colorWhite font-medium opacity5 h48px"
+                                maxlength="1">
+                            <input type="number"
+                                class="verify-input inputGeneral subtitle20px colorWhite font-medium opacity5 h48px"
+                                maxlength="1">
+                            <input type="number"
+                                class="verify-input inputGeneral subtitle20px colorWhite font-medium opacity5 h48px"
+                                maxlength="1">
+                        </div>
+                    </div>
+                    <button onclick="window.location.href='index.html'" type="button"
+                        class="btnLinear colorWhite h48px w-100 d-flex align-items-center justify-content-center subtitle18px font-semiBold mt24px">Verify</button>
+                    <div class="d-flex align-items-center justify-content-center mt32px">
+                        <h5 class="colorWhite subtitle14px opacity5 font-medium">Have an account?!..</h5>
+                        <a href="./signUp.html" class="colorGreen subtitle14px font-medium">Sign In Now!</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <footer id="footer"></footer>
+    <!-- Jquery Library -->
+    <script src="./js/jquery/jquery.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Fetch Data JS -->
+    <script src="./js/shared/fetchDataEn.js"></script>
+    <!-- Animation JS -->
+    <script src="./js/shared/animation.js"></script>
+
+    <script>
+        const inputs = document.querySelectorAll('.verify-input');
+
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', () => {
+                if (input.value.length >= 1) {
+                    input.classList.add('filled');
+
+                    const nextInput = inputs[index + 1];
+                    if (nextInput) {
+                        nextInput.focus();
+                    }
+                } else {
+                    input.classList.remove('filled');
+                }
+            });
+
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && input.value === '') {
+                    const prevInput = inputs[index - 1];
+                    if (prevInput) {
+                        prevInput.focus();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

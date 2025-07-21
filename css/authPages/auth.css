@@ -1,0 +1,95 @@
+.authCard{
+    width: 30%;
+    margin: 100px auto;
+    border-radius: 32px;
+    background: linear-gradient(165deg, rgba(43, 255, 255, 0.10) 0%, rgba(43, 255, 255, 0.02) 50%, rgba(43, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    padding: 32px;
+}
+.authCard .divTitleCard h1{
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.264px;
+}
+.authCard .divTitleCard{
+    margin-bottom: 1.5rem;
+}
+.authCard .divTitleCard p{
+    letter-spacing: -0.154px;
+}
+.authCard form label{margin-bottom: 0.5rem;}
+.authCard form input{padding: 0 1rem;}
+.authCard form .boxInput{
+    border-radius: 8px;
+    border: 2px solid #00C7B1;
+    opacity: 0.5;
+    background: rgba(0, 199, 177, 0.20);
+    padding: 0 1rem;
+}
+.authCard form .boxInput:focus-within{opacity: 1;}
+.authCard form .boxInput input{
+    border: none;
+    background: none;
+    padding: 0;
+}
+.authCard form  input:focus{opacity: 1;}
+.authCard form .boxInput img{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(95%) saturate(21%) hue-rotate(3deg) brightness(105%) contrast(105%);
+}
+.authCard form a{text-decoration: none;transition: all 0.3s ease;}
+.authCard form a:hover{text-decoration: underline;}
+.authCard form .fxButtons{gap: 1rem;}
+.authCard form .fxButtons button{
+    width: 33.3%;
+    gap: 4px;
+}
+.authCard form .fxButtons button span{font-size: 12px;}
+input.filled {
+  opacity: 1 !important;
+}
+@media (min-width:1706.67px) {
+    .authCard form .fxButtons button img{width: 30px;}
+    .authCard form .fxButtons button span{font-size: 14px;}
+}
+@media (min-width:1920px) {
+    .authCard form .fxButtons button img{width: 35px;}
+    .authCard form .fxButtons button span{font-size: 17px;}
+}
+.authCard form .fxVerifyInputs{
+    gap: 22px;
+}
+.authCard form .fxVerifyInputs input{
+    width: 20%;
+}
+@media (min-width:2048px) {}
+@media (min-width:2304px) {}
+@media (min-width:3072px) {}
+@media (max-width:1396.36px) {}
+@media (max-width:1228.8px) {
+    .authCard{width: 33%;}
+    .authCard form .fxButtons{gap: 10px;}
+    .authCard form .fxButtons button img{width: 20px;}
+}
+@media (max-width:1024px) {
+     .authCard form .fxButtons button img{width: 17px;}
+      .authCard form .fxButtons button span{font-size: 11px;}
+      .authCard{width: 35%;padding: 24px;}
+      .authCard form .boxInput img {width: 1rem;height: 1rem;}
+}
+@media (max-width:877.71px) {
+    .authCard form .fxButtons button img{width: 14px;}
+    .authCard form .fxButtons button span{font-size: 10px;}
+      .authCard{width: 35%;padding: 20px;}
+}
+@media (max-width:768px) {
+    .authCard form .fxButtons button span{font-size: 9px;}
+    .authCard{width: 40%;padding: 20px;}
+}
+@media (max-width:614.4px) {
+    .authCard{width: 90%;padding: 1.5rem 1rem;margin: 3rem auto;}
+    .authCard form .fxButtons button span{font-size: 11px;}
+    .authCard form .fxButtons button img{width: 17px;}
+}
+@media (max-width:512px) {}

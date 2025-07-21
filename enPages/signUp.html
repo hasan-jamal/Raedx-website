@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raedx</title>
+    <link rel="icon" href="../images/header-Images/RaedxLogo.svg">
+    <!---Style CSS-->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="../css/authPages/auth.css">
+    <!-- English Style -->
+    <link rel="stylesheet" href="../css/englishPages/en.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-mobile">
+        <div class=" align-items-center  justify-content-between  flex-head">
+            <a href="index.html"><img src="../images/header-Images/RaedxLogo.svg" class="logo-image" /></a>
+        </div>
+    </div>
+    <header>
+        <div class="header-container px-138px">
+            <div class="d-flex align-items-center justify-content-between fxHeader">
+                <a class="divImage" href="../index.html"><img src="../images/header-Images/RaedxLogo.svg"
+                        alt="Raedx Logo image"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="authCard">
+            <div class="authCard-container">
+                <div class="divTitleCard">
+                    <h1 class="subtitle24px font-medium colorWhite">Sign Up</h1>
+                    <p class="colorWhite subtitle14px font-medium opacity5">Let’s Start your Business Journey together
+                    </p>
+                </div>
+                <form action="">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="form-group">
+                            <label for="" class="colorWhite font-medium subtitle14px d-block">Email</label>
+                            <input type="text"
+                                class="inputGeneral subtitle14px colorWhite font-medium opacity5 h48px w-100"
+                                placeholder="Example@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="colorWhite font-medium subtitle14px d-block">Password</label>
+                            <div class="d-flex boxInput h48px align-items-center">
+                                <input type="password"
+                                    class="inputGeneral subtitle14px colorWhite font-medium opacity5 w-100"
+                                    placeholder="**************">
+                                <img src="../images/authPages/Eye.svg" class="toggle-password"
+                                    data-show="../images/authPages/eye-slash.svg"
+                                    data-hide="../images/authPages/Eye.svg" alt="Toggle Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="colorWhite font-medium subtitle14px d-block">Retype Password</label>
+                            <div class="d-flex boxInput h48px align-items-center">
+                                <input type="password"
+                                    class="inputGeneral subtitle14px colorWhite font-medium opacity5 w-100"
+                                    placeholder="**************">
+                                <img src="../images/authPages/Eye.svg" class="toggle-password"
+                                    data-show="../images/authPages/eye-slash.svg"
+                                    data-hide="../images/authPages/Eye.svg" alt="Toggle Password">
+                            </div>
+                        </div>
+
+                    </div>
+                    <button onclick="window.location.href='verify.html'" type="button"
+                        class="btnLinear colorWhite h48px w-100 d-flex align-items-center justify-content-center subtitle18px font-semiBold mt24px">Sign
+                        Up Now</button>
+                    <div class="d-flex align-items-center mt1rem">
+                        <h5 class="colorWhite subtitle14px opacity5 font-medium">By signing up you agree on our..</h5>
+                        <a href="./terms.html" class="colorGreen subtitle14px font-medium">Terms & Conditions</a>
+                    </div>
+                    <div class="d-flex justify-content-between mt1rem fxButtons">
+                        <button class="btnBlack h44px d-flex align-items-center justify-content-center btn-hover">
+                            <img src="../images/authPages/googleIcon.svg" alt="google Icon">
+                            <span class="colorWhite font-medium">Google</span>
+                        </button>
+                        <button class="btnBlack h44px d-flex align-items-center justify-content-center btn-hover">
+                            <img src="../images/authPages/appleIcon.svg" alt="apple Icon">
+                            <span class="colorWhite font-medium">Apple</span>
+                        </button>
+                        <button class="btnBlack h44px d-flex align-items-center justify-content-center btn-hover">
+                            <img src="../images/authPages/facebook.svg" alt="facebook Icon">
+                            <span class="colorWhite font-medium">Facebook</span>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt32px">
+                        <h5 class="colorWhite subtitle14px opacity5 font-medium">Have an account?!..</h5>
+                        <a href="./login.html" class="colorGreen subtitle14px font-medium">Sign In Now!</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <footer id="footer"></footer>
+    <!-- Jquery Library -->
+    <script src="../js/jquery/jquery.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Fetch Data JS -->
+    <script src="../js/shared/fetchData.js"></script>
+    <!-- Animation JS -->
+    <script src="../js/shared/animation.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', '.toggle-password', function () {
+                const $icon = $(this);
+                const $input = $icon.siblings('input[type="password"], input[type="text"]');
+
+                if ($input.length) {
+                    const isPassword = $input.attr('type') === 'password';
+                    $input.attr('type', isPassword ? 'text' : 'password');
+
+                    const showIcon = $icon.data('show') || './images/authPages/eye-slash.svg';
+                    const hideIcon = $icon.data('hide') || './images/authPages/Eye.svg';
+                    $icon.attr('src', isPassword ? showIcon : hideIcon);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

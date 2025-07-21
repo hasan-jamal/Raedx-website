@@ -5,9 +5,79 @@
 .font-medium {font-family: 'Montserrat Medium' !important; }
 .font-ExtraBold {font-family: 'Montserrat ExtraBold';;font-weight: 900;}
 .sectionForm .boxForm .fxButtonsSteps .btnLinear img,
-header .fxHeader .publicStyleList button img{transform: rotate(180deg);}
+header .fxHeader .publicStyleList button img,.contactPage .boxContact .btnLinear img,.publicSection .boxText .fxBtnsBox a img,
+.homeS4 .box .fxBtnsBox a img,.sectionCheckout .fxCheckout .partOne .boxPayment .btnCheckout img,
+.homeS7 .fx-itemQuestion .icon{transform: rotate(180deg);}
+.publicSection .contentPart .boxImage a img{transform: rotate(0);}
 .sidenav-active nav{left: 0;right: auto;}
 .nav-mobile {
   right: auto;
   left: -100%;
+}
+.homeS3 .fxCenter{direction: rtl;}
+main .newBackground {
+    background-position: right;
+}
+.investmentSectionS1:after {
+    content: "";
+    background: linear-gradient(90deg, #000 26.81%, rgba(0, 0, 0, 0.00) 99.77%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;left: auto;
+    top: 0;
+    z-index: -1;
+}
+.sectionCheckout .fxCheckout .partTwo .boxBudget .closeBackGreen {
+    left: auto;right: -0.5rem;
+}
+
+.homeS2 .homeS2-container{padding-right: 0px;padding-left: 147px;}
+main .servicesS3 .fxServicesS3:nth-child(even) {padding-right: 135px;padding-left: 0;}
+main .servicesS3 .fxServicesS3{padding-right: 0px;padding-left: 135px};
+
+@media (min-width:1706.67px) {
+    .homeS2 .homeS2-container{padding-right: 0px;padding-left:167px ;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 167px;;}
+    main .servicesS3 .fxServicesS3{padding-left: 167px;}
+
+}
+@media (min-width:1920px) {
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 187px;;}
+    main .servicesS3 .fxServicesS3{padding-left: 187px;}
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left:187px ;}
+}
+@media (min-width:2048px) {
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 220px;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 220px;;}
+    main .servicesS3 .fxServicesS3{padding-left: 220px;}
+}
+@media (max-width:1396.36px) {
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 127px;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 127px;}
+    main .servicesS3 .fxServicesS3{padding-left: 127px;gap: 80px;}
+}
+@media (max-width:1228.8px) {
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 100px;}
+    main .servicesS3 .fxServicesS3{padding-left: 100px;}
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 100px;}
+}
+@media (max-width:1024px) {
+    main .servicesS3 .fxServicesS3{padding-left: 80px;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 80px;}
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 80px;}
+}
+@media (max-width:877.71px) {
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 50px;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 50px;}
+    main .servicesS3 .fxServicesS3{padding-left: 40px;}
+}
+@media (max-width:768px) {
+    .homeS2 .homeS2-container{padding-right: 0px; padding-left: 30px;}
+    main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 30px;}
+    main .servicesS3 .fxServicesS3{padding-left: 30px;}
+
+}
+@media (max-width:614.4px) {
+    .homeS2 .homeS2-container{padding:0px;}
 }
