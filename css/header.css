@@ -324,6 +324,15 @@ header .fxHeader .divLang .publicStyleList button{
   opacity: 1;
   gap: 8px;
 }
+ #toggle-mode{padding: 0 10px;font-size: 25px;}
+.fxButtonsMode{gap: 8px; }
+#toggle-modeMb{
+  padding: 0 5px;
+  font-size: 15px;
+  height: 33px;
+  border-radius: 5px;
+  
+}
 @media (min-width:1706.67px) {
   header .fxHeader .divLinks .fxLinks{gap: 28px;}
   #headerUser .divDropdown .userImage{width: 45px;height: 45px;}

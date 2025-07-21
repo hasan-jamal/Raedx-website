@@ -34,6 +34,22 @@ function setupDropdowns() {
       btn.classList.remove("active");
     });
   });
+
+  $("#toggle-mode, #toggle-modeMb").click(function () {
+    $("body").toggleClass("light-mode");
+
+    if ($("body").hasClass("light-mode")) {
+      localStorage.setItem("theme", "light");
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  if (localStorage.getItem("theme") === "light") {
+    $("body").addClass("light-mode");
+  } else {
+    $("body").removeClass("light-mode");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

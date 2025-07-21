@@ -60,6 +60,7 @@ body {
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 1);
   font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 main {position: relative;}
 main .circleBlue{
@@ -733,11 +734,133 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
 @media (max-width:512px) {
 
 }
-
-
-
-
-
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+body.light-mode .hamburger div{background-color: #000;}
+body.light-mode .homeS2 .fxHomeS2 .divText p{color: rgba(0, 0, 0, 0.7);}
+body.light-mode .colorWhite,
+body.light-mode header .fxHeader .divLinks a,
+body.light-mode .homeS3 .divTabs button,body.light-mode .publicSection .boxTable table th,
+body.light-mode .btnLinear:hover,
+body.light-mode .nav-mobile .links a,body.light-mode .nav-mobile .links a span
+{color: #000;}
+body.light-mode .colorWhite5,
+body.light-mode .homeS7 .boxHomeS7 .questions .itemQuestion p,
+body.light-mode .servicesS1 .fxServicesS1 .divText p,
+body.light-mode .investmentSectionS5 .fxText .fxTextPart span,
+body.light-mode .investmentSectionS4 .divText .fxText .fxTextPart span,
+body.light-mode .publicSection .boxTable table td {color: rgba(0, 0, 0, 0.5)}
+body.light-mode .colorWhite8,body.light-mode .cardPrice .fxListPrice .itemListPrice p,
+body.light-mode .homeS6 .divText p,body.light-mode .investmentSectionS4 .divText p,
+body.light-mode .servicesS3 .fxServicesS3 .divText p{color: rgba(0, 0, 0, 0.8)}
+body.light-mode .divTitle h1 ,body.light-mode .investmentSectionS5 .fxText .fxTextPart h2,
+body.light-mode .homeS6 .divText h1,body.light-mode .investmentSectionS4 .divText .fxText .fxTextPart h2,
+body.light-mode .homeS6 .divText .fxText .fxTextPart h2 ,body.light-mode .investmentSectionS4 .divText h1{
+    background: linear-gradient(180deg, #000 30%, #707070 100%);-webkit-background-clip: text;}
+body.light-mode .homeS5 .divText h1.colorWhite,
+body.light-mode .homeS3 .divTabs button.active{color: #fff;}
+body.light-mode .btnLinear span.colorWhite,
+body.light-mode .btnLinear {color: #fff;}
+body.light-mode input.colorWhite::placeholder{color: #000 !important;}
+body.light-mode .homeS7 .fx-itemQuestion img,
+body.light-mode header .fxHeader .divLinks a img,body.light-mode .publicSection .boxTable table td a img,
+body.light-mode header .fxHeader .publicStyleList button img,body.light-mode .publicSection .contentPart .divFilter form .form-group img,
+body.light-mode header .fxHeader .publicStyleList button svg,body.light-mode .input-field img,
+body.light-mode header .fxHeader .divButtons .divLang button img,body.light-mode .publicSection .contentPart .divFilter .divDropdown a img,
+body.light-mode header .divImage img,body.light-mode .blogDetails .fxDetailsBlog .partTwo .fxData img,
+body.light-mode footer .divImage img,body.light-mode .homeS3 .fxCenter img,
+body.light-mode .homeS1 .fxHomeS1 .divLogos .fxLogos img,body.light-mode .nav-mobile .fxHeadList .divLogo img,
+body.light-mode .settingPage .fxContactBtns button img,body.light-mode .navbar-mobile .flex-head img,
+body.light-mode .nav-mobile .links a svg,
+body.light-mode .nav-mobile .links a img,
+body.light-mode .nav-mobile .publicStyleList button img{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(78%) saturate(7474%) hue-rotate(293deg) brightness(106%) contrast(96%);
+} 
+body.light-mode .nav-mobile{background: #fff;}
+body.light-mode header .fxHeader .publicStyleList button:hover img,
+body.light-mode header .fxHeader .divLang .publicStyleList button:hover svg{
+  filter: brightness(0) saturate(100%) invert(70%) sepia(31%) saturate(6223%) hue-rotate(130deg) brightness(94%) contrast(101%);
+}
+body.light-mode .homeS7 .fxButtons button,
+body.light-mode .blogPage .fxButtons button{border: 1px solid #000;}
+body.light-mode .homeS7 .fxButtons button.active, 
+body.light-mode .homeS7 .fxButtons button:hover,
+body.light-mode .blogPage .fxButtons button,
+body.light-mode .blogPage .fxButtons button:hover
+ { border: 1px solid #00C7B1;}
+body.light-mode .cardPrice .divBtn button {
+    border: 1px solid rgba(40, 40, 40, 0.1);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode .cardPrice .divBtn button:hover,
+body.light-mode .cardPrice.active button{
+    color: #fff;
+    background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);
+}
+body.light-mode .cardPrice {
+    background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
+}
+body.light-mode .cardUser {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode header{background: #fff;}
+body.light-mode header .fxHeader .publicStyleList,
+body.light-mode .divDropdown .publicStyleList,
+body.light-mode .publicSection .contentPart .boxEmpty {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(245deg, #d2d2d2 -0.21%, #d9d9d9 59.47%, #eaeaea 93.38%);
+}
+body.light-mode .ui-widget-content {color: #000 !important;}
+body.light-mode header .fxHeader .divButtons .divLang button {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode .investmentSectionS1:after {
+    background: linear-gradient(270deg, #fff 26.81%, rgba(255, 255, 255, 0.00) 99.77%);
+  }
+.homeS2ImgAr{display: none;}
+body.light-mode .homeS2ImgAr{display: block;}
+body.light-mode .homeS2Img{display: none;}
+body.light-mode header::after,
+body.light-mode footer::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+}
+body.light-mode .btnBlack {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode .homeS3 .divTabs {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.08);
+}
+body.light-mode .settingPage .fxContactBtns button {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode .publicSection .sidePart .listBtns button.active,body.light-mode .publicSection .sidePart .listBtns button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    color: #000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+body.light-mode .publicSection .contentPart .boxImage a span,
+body.light-mode .publicSection .contentPart .boxImage .divText h3{color: #fff;}
+body.light-mode .publicSection .contentPart .boxImage .divText {
+    background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
+}
+body.light-mode .publicSection .contentPart .boxImage button {
+    background: rgba(0, 0, 0, 0.10);
+    color: #fff;
+}
+body.light-mode .publicSection .boxTable ,
+body.light-mode .authCard{
+    background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
+  }
+body.light-mode #toggle-mode,
+body.light-mode #toggle-modeMb{background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);}
 @media (min-width:1706.67px) {}
 @media (min-width:1920px) {}
 @media (min-width:2048px) {}

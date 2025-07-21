@@ -47,7 +47,7 @@ main .newBackground{
 }
 @media (max-width:512px) {}
 /* Home Section 4 Style */
-.investmentSectionS2{margin-bottom: 100px;}
+.investmentSectionS2{margin: 100px;}
 .investmentSectionS2 .fxGeneral{
     gap: 93px;
     align-items: normal;
@@ -175,20 +175,15 @@ main .newBackground{
     }
     .investmentSectionS2 .box h3{line-height: 150%;}
     .investmentSectionS2 .box{flex-direction: column;gap: 24px;}
-
 }
-
-
 .investmentSectionS3{margin-bottom: 120px;}
 .investmentSectionS3 .fxButtons{gap: 1rem;margin-top: 32px;}
 @media (max-width:1024px) {
     .investmentSectionS3 .fxButtons{gap: 1rem;margin-top: 24px;}
 }
 @media (max-width:614.4px) {
-    .investmentSectionS3{margin-bottom: 80px;}
+    .investmentSectionS3{margin: 80px;}
 }
-
-
 /* Home Section 6 Style */
 .investmentSectionS4{margin-bottom: 120px;}
 .investmentSectionS4 .fxInvestmentSectionS4{
