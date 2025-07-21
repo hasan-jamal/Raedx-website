@@ -755,7 +755,8 @@ body.light-mode .investmentSectionS4 .divText .fxText .fxTextPart span,
 body.light-mode .publicSection .boxTable table td {color: rgba(0, 0, 0, 0.5)}
 body.light-mode .colorWhite8,body.light-mode .cardPrice .fxListPrice .itemListPrice p,
 body.light-mode .homeS6 .divText p,body.light-mode .investmentSectionS4 .divText p,
-body.light-mode .servicesS3 .fxServicesS3 .divText p{color: rgba(0, 0, 0, 0.8)}
+body.light-mode .servicesS3 .fxServicesS3 .divText p,
+body.light-mode .divTitle p{color: rgba(0, 0, 0, 0.8)}
 body.light-mode .divTitle h1 ,body.light-mode .investmentSectionS5 .fxText .fxTextPart h2,
 body.light-mode .homeS6 .divText h1,body.light-mode .investmentSectionS4 .divText .fxText .fxTextPart h2,
 body.light-mode .homeS6 .divText .fxText .fxTextPart h2 ,body.light-mode .investmentSectionS4 .divText h1{
