@@ -41,11 +41,13 @@ main .newBackground {
 .sectionCheckout .fxCheckout .partTwo .boxBudget .closeBackGreen {
     left: auto;right: -0.5rem;
 }
-
+.sectionCheckout .fxCheckout .formCreate .boxInputVisa {
+    padding:0px 0px 0 18px;
+}
+.sectionCheckout .fxCheckout .formCreate .boxInputIcon{padding-left: 0;padding-right: 1rem;}
 .homeS2 .homeS2-container{padding-right: 0px;padding-left: 147px;}
 main .servicesS3 .fxServicesS3:nth-child(even) {padding-right: 135px;padding-left: 0;}
 main .servicesS3 .fxServicesS3{padding-right: 0px;padding-left: 135px};
-
 @media (min-width:1706.67px) {
     .homeS2 .homeS2-container{padding-right: 0px;padding-left:167px ;}
     main .servicesS3 .fxServicesS3:nth-child(even){padding-right: 167px;;}
