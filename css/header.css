@@ -297,6 +297,7 @@ header .fxHeader .publicStyleList button{
 }
 header .fxHeader .publicStyleList button:hover span{
  color: #00C7B1;
+ font-weight: 600;
 }
 header .fxHeader .publicStyleList button:hover img,
 header .fxHeader .publicStyleList button:hover svg{

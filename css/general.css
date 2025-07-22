@@ -246,6 +246,7 @@ p, button, a { font-size: 1rem; }
   .px-50 { padding: 0 20px; }
   .px-138px { padding: 0 20px; }
   .px-23px { padding: 0 12px; }
+  main .circleBlue{width: 100%;}
 }
 .pre-whiteSpace {white-space: pre;}
 .fxGeneral {
@@ -748,8 +749,9 @@ body.light-mode .homeS2 .fxHomeS2 .divText p{color: rgba(0, 0, 0, 0.7);}
 body.light-mode .colorWhite,
 body.light-mode header .fxHeader .divLinks a,
 body.light-mode .homeS3 .divTabs button,body.light-mode .publicSection .boxTable table th,
-body.light-mode .btnLinear:hover,
-body.light-mode .nav-mobile .links a,body.light-mode .nav-mobile .links a span
+body.light-mode .btnLinear:hover,body.light-mode .cardPrice .fxPrice span,
+body.light-mode .nav-mobile .links a,body.light-mode .nav-mobile .links a span,
+body.light-mode .sectionForm .boxForm .fxButtonsSteps .btnLinear:hover span
 {color: #000;}
 body.light-mode .colorWhite5,
 body.light-mode .homeS7 .boxHomeS7 .questions .itemQuestion p,
@@ -768,20 +770,26 @@ body.light-mode .homeS6 .divText .fxText .fxTextPart h2 ,body.light-mode .invest
 body.light-mode .homeS5 .divText h1.colorWhite,
 body.light-mode .homeS3 .divTabs button.active{color: #fff;}
 body.light-mode .btnLinear span.colorWhite,
-body.light-mode .btnLinear {color: #fff;}
-body.light-mode input.colorWhite::placeholder{color: #000 !important;}
+body.light-mode .btnLinear ,
+body.light-mode .modalUsers .profile-pic .-label span{color: #fff;}
+body.light-mode input.colorWhite::placeholder,
+body.light-mode .publicSection .sidePart .btnLinear:hover span{color: #000 !important;}
 body.light-mode .homeS7 .fx-itemQuestion img,
-body.light-mode header .fxHeader .divLinks a img,body.light-mode .publicSection .boxTable table td a img,
+body.light-mode header .fxHeader .divLinks a .arrowDown,body.light-mode .publicSection .boxTable table td a img,
 body.light-mode header .fxHeader .publicStyleList button img,body.light-mode .publicSection .contentPart .divFilter form .form-group img,
 body.light-mode header .fxHeader .publicStyleList button svg,body.light-mode .input-field img,
 body.light-mode header .fxHeader .divButtons .divLang button img,body.light-mode .publicSection .contentPart .divFilter .divDropdown a img,
 body.light-mode header .divImage img,body.light-mode .blogDetails .fxDetailsBlog .partTwo .fxData img,
 body.light-mode footer .divImage img,body.light-mode .homeS3 .fxCenter img,
+body.light-mode .sectionCheckout .fxCheckout .partOne .boxPayment .btnCheckout img,
 body.light-mode .homeS1 .fxHomeS1 .divLogos .fxLogos img,body.light-mode .nav-mobile .fxHeadList .divLogo img,
 body.light-mode .settingPage .fxContactBtns button img,body.light-mode .navbar-mobile .flex-head img,
-body.light-mode .nav-mobile .links a svg,
-body.light-mode .nav-mobile .links a img,
-body.light-mode .nav-mobile .publicStyleList button img{
+body.light-mode .nav-mobile .links a svg,body.light-mode .sectionForm .boxForm .fxLastDiv .btnBlack img,
+body.light-mode .nav-mobile .links a img, body.light-mode .sectionForm .boxForm .fxButtonsSteps .btnLinear:hover img,
+body.light-mode .nav-mobile .publicStyleList button img,body.light-mode .sectionForm .boxForm .btnAddNew img,
+body.light-mode .sectionForm .boxForm .fxLastDiv .divLang .publicStyleList button svg,
+body.light-mode .publicSection .sidePart .btnLinear:hover img,
+body.light-mode .sectionCheckout .fxCheckout .partOne .addCardBtn img{
   filter: brightness(0) saturate(100%) invert(0%) sepia(78%) saturate(7474%) hue-rotate(293deg) brightness(106%) contrast(96%);
 } 
 body.light-mode .nav-mobile{background: #fff;}
@@ -808,7 +816,12 @@ body.light-mode .cardPrice.active button{
 body.light-mode .cardPrice {
     background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
 }
-body.light-mode .cardUser {
+ body.light-mode .sectionForm .boxForm .fxLastDiv .divLang .publicStyleList button{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+body.light-mode .cardUser ,
+body.light-mode .sectionForm .boxForm .fxLastDiv .btnBlack{
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.00) 100%);
 }
@@ -860,12 +873,33 @@ body.light-mode .publicSection .contentPart .boxImage button {
     background: rgba(0, 0, 0, 0.10);
     color: #fff;
 }
+body.light-mode .modalUsers{background: #fff;}
 body.light-mode .publicSection .boxTable ,
 body.light-mode .authCard{
     background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
   }
+body.light-mode .sectionForm .boxForm .dash-lines .line{background: #c6c6c6;}
+body.light-mode .sectionForm .boxForm .dash-lines .line.active {background: #00C7B1;}
+body.light-mode .sectionForm .boxForm .basic-container input[type="radio"]:checked{
+      background-color: #fff;
+}
+body.light-mode .sectionForm .boxForm .fxSelectBtn button:hover {
+    border: 1px solid #00C7B1;
+    font-weight: 600;
+}
+body.light-mode .sectionForm .boxForm .btnAddNew {
+    border: 1px solid #282929;
+}
+body.light-mode .sectionForm .boxForm .basic-container input[type="radio"]:checked + label{font-weight: bold;}
 body.light-mode #toggle-mode,
 body.light-mode #toggle-modeMb{background: linear-gradient(93deg, #00C7B1 -4%, #03477B 70.58%);}
+body.light-mode .sectionCheckout .fxCheckout .partTwo,
+body.light-mode .boxStyle{
+  background: linear-gradient(165deg, rgba(43, 0, 0, 0.10) 0%, rgba(43, 0, 0, 0.02) 50%, rgba(43, 0, 0, 0.06) 100%);
+}
+body.light-mode .sectionCheckout .fxCheckout .partTwo .boxDetails h2 {border-bottom: 1px solid #bababa;}
+body.light-mode .sectionCheckout .fxCheckout .partTwo .boxDetails .totalDetails {border-top: 1px solid #bababa;}
+body.light-mode .sectionCheckout .fxCheckout .partOne .boxPayment{border: 1px solid #bababa;}
 @media (min-width:1706.67px) {}
 @media (min-width:1920px) {}
 @media (min-width:2048px) {}

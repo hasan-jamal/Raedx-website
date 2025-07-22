@@ -7,8 +7,18 @@
 .sectionForm .boxForm .fxButtonsSteps .btnLinear img,
 header .fxHeader .publicStyleList button img,.contactPage .boxContact .btnLinear img,.publicSection .boxText .fxBtnsBox a img,
 .homeS4 .box .fxBtnsBox a img,.sectionCheckout .fxCheckout .partOne .boxPayment .btnCheckout img,
-.homeS7 .fx-itemQuestion .icon{transform: rotate(180deg);}
+.homeS7 .fx-itemQuestion .icon,
+.investmentSectionS2 .box .fxBtnsBox a img{transform: rotate(180deg);}
+.investmentSectionS2 .box .fxBtnsBox a span,
+.investmentSectionS2 .box .fxBtnsBox a{white-space: pre;}
+.investmentSectionS6 .divText{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: end;
+}
 .publicSection .contentPart .boxImage a img{transform: rotate(0);}
+.investmentSectionS6{direction: rtl;}
 .sidenav-active nav{left: 0;right: auto;}
 .nav-mobile {
   right: auto;

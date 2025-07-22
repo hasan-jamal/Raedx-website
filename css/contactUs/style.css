@@ -61,6 +61,7 @@
 .contactPage .boxContact .fxInputs .form-group{
     width: 48%;
 }
+.contactPage .boxContact .fxInputs .form-group:focus-within{opacity: 1;}
 .contactPage .boxContact .fxInputs .form-group input{width: 100%;}
 .contactPage .boxContact label{margin-bottom: 1rem;display: block;}
 .contactPage .boxContact textarea{
@@ -69,8 +70,10 @@
     border: 2px solid #00C7B1;
     opacity: 0.5;
     height: 183px;
+    padding: 1rem;
     background: rgba(0, 199, 177, 0.20);
 }
+.contactPage .boxContact textarea:focus{border: 1px solid #00C7B1;}
 .contactPage .boxContact .btnBlack{margin: 24px 0 0 0;}
 .contactPage .boxContact #fileList{margin:1rem 0 40px 0;overflow: hidden;}
 .contactPage .boxContact #fileList button {

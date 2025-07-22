@@ -34,28 +34,20 @@ function setupDropdowns() {
       btn.classList.remove("active");
     });
   });
+  $("#toggle-mode, #toggle-modeMb").click(function () {
+    $("body").toggleClass("light-mode");
+
+    if ($("body").hasClass("light-mode")) {
+      localStorage.setItem("theme", "light");
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  if (localStorage.getItem("theme") === "light") {
+    $("body").addClass("light-mode");
+  } else {
+    $("body").removeClass("light-mode");
+  }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  Promise.all([
-    fetch("../shared/header.html").then((res) => res.text()),
-    fetch("../shared/navbarMobile.html").then((res) => res.text()),
-    fetch("../shared/headerUser.html").then((res) => res.text()),
-  ]).then(([headerHtml, navbarHtml, headerUserHtml]) => {
-    const header = document.getElementById("header");
-    const navbarMobile = document.getElementById("navbarMobile");
-    const headerUser = document.getElementById("headerUser");
-
-    if (header) header.innerHTML = headerHtml;
-    if (navbarMobile) navbarMobile.innerHTML = navbarHtml;
-    if (headerUser) headerUser.innerHTML = headerUserHtml;
-
-    setTimeout(setupDropdowns, 0);
-  });
-});
-
-fetch("../shared/footer.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("footer").innerHTML = data;
-  });
+setupDropdowns();

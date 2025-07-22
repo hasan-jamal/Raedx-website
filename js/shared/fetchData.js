@@ -51,7 +51,7 @@ function setupDropdowns() {
     $("body").removeClass("light-mode");
   }
 }
-
+setupDropdowns();
 document.addEventListener("DOMContentLoaded", () => {
   Promise.all([
     fetch("shared/header.html").then((res) => res.text()),

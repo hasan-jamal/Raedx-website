@@ -47,7 +47,7 @@ main .newBackground{
 }
 @media (max-width:512px) {}
 /* Home Section 4 Style */
-.investmentSectionS2{margin: 100px;}
+.investmentSectionS2{margin: 100px 0 ;}
 .investmentSectionS2 .fxGeneral{
     gap: 93px;
     align-items: normal;
@@ -173,6 +173,7 @@ main .newBackground{
         max-width: calc(90% - 0px);
         margin: auto;
     }
+    .investmentSectionS2{margin: 70px 0;}
     .investmentSectionS2 .box h3{line-height: 150%;}
     .investmentSectionS2 .box{flex-direction: column;gap: 24px;}
 }
