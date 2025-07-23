@@ -151,6 +151,7 @@
 .homeS2 .fxHomeS2 .divText .lastDiv .btnLinear{
     gap: 10px;
 }
+.homeS2 .fxHomeS2 .divText .lastDiv a{text-decoration: none;}
 .homeS2 .fxHomeS2 .divText h1 span{
     position: relative;
 }
@@ -211,7 +212,7 @@
     .homeS2 .fxHomeS2 .divText .lastDiv{gap: 1rem;}
 }
 /* Home Section 4 Style */
-.homeS4{margin-bottom: 100px;}
+.homeS4{margin: 13rem 0;}
 .homeS4 .fxGeneral{
     gap: 93px;
     align-items: normal;
@@ -338,10 +339,11 @@
     }
     .homeS4 .box h3{line-height: 150%;}
     .homeS4 .box{flex-direction: column;gap: 24px;}
+    .homeS4{margin: 8rem 0;}
 }
 
 /* Home Section 5 Style */
-.homeS5{margin-bottom: 100px;}
+.homeS5{margin-bottom: 13rem;}
 .homeS5 .backHomeS5{
     position: relative;
     height: 76vh;
@@ -429,9 +431,10 @@
     .homeS5 .divText p{margin-bottom: 12px;font-size: 15px;}
     .homeS5 .divText h1{font-size: 16px;width: 100%;font-weight: 600;margin-bottom: 12px;}
     .homeS5 .divText button{width: max-content;gap: 5px;}
+    .homeS5{margin-bottom: 8rem;}
 }
 /* Home Section 6 Style */
-.homeS6{margin-bottom: 120px;}
+.homeS6{margin-bottom: 12rem;}
 .homeS6 .fxHomeS6{
     align-items: end;
     margin-top: 40px;
@@ -510,7 +513,7 @@
     .homeS6 .divText .fxText{gap: 1.5rem;}
     .homeS6 .fxHomeS6{margin-top: 40px;}
     .homeS6 .divText .fxText .fxTextPart h2{font-size: 24px;}
-    .homeS6{margin-bottom: 100px;}
+    .homeS6{margin-bottom: 8rem;}
 }
 /* Home Section 6 Style */
 .homeS7{margin-bottom: 120px;}

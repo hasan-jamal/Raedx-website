@@ -745,7 +745,8 @@ body.light-mode {
   color: #121212;
 }
 body.light-mode .hamburger div{background-color: #000;}
-body.light-mode .homeS2 .fxHomeS2 .divText p{color: rgba(0, 0, 0, 0.7);}
+body.light-mode .homeS2 .fxHomeS2 .divText p,
+body.light-mode .homeS2 .btnLinear:hover span{color: rgba(0, 0, 0, 0.7);}
 body.light-mode .colorWhite,
 body.light-mode header .fxHeader .divLinks a,
 body.light-mode .homeS3 .divTabs button,body.light-mode .publicSection .boxTable table th,
@@ -762,7 +763,8 @@ body.light-mode .publicSection .boxTable table td {color: rgba(0, 0, 0, 0.5)}
 body.light-mode .colorWhite8,body.light-mode .cardPrice .fxListPrice .itemListPrice p,
 body.light-mode .homeS6 .divText p,body.light-mode .investmentSectionS4 .divText p,
 body.light-mode .servicesS3 .fxServicesS3 .divText p,
-body.light-mode .divTitle p{color: rgba(0, 0, 0, 0.8)}
+body.light-mode .divTitle p,
+body.light-mode .contactPage .boxContact .divTitle p{color: rgba(0, 0, 0, 0.8)}
 body.light-mode .divTitle h1 ,body.light-mode .investmentSectionS5 .fxText .fxTextPart h2,
 body.light-mode .homeS6 .divText h1,body.light-mode .investmentSectionS4 .divText .fxText .fxTextPart h2,
 body.light-mode .homeS6 .divText .fxText .fxTextPart h2 ,body.light-mode .investmentSectionS4 .divText h1{
@@ -789,7 +791,8 @@ body.light-mode .nav-mobile .links a img, body.light-mode .sectionForm .boxForm 
 body.light-mode .nav-mobile .publicStyleList button img,body.light-mode .sectionForm .boxForm .btnAddNew img,
 body.light-mode .sectionForm .boxForm .fxLastDiv .divLang .publicStyleList button svg,
 body.light-mode .publicSection .sidePart .btnLinear:hover img,
-body.light-mode .sectionCheckout .fxCheckout .partOne .addCardBtn img{
+body.light-mode .sectionCheckout .fxCheckout .partOne .addCardBtn img,
+body.light-mode .homeS2 .btnLinear:hover img{
   filter: brightness(0) saturate(100%) invert(0%) sepia(78%) saturate(7474%) hue-rotate(293deg) brightness(106%) contrast(96%);
 } 
 body.light-mode .nav-mobile{background: #fff;}
@@ -844,7 +847,8 @@ body.light-mode .investmentSectionS1:after {
 body.light-mode .homeS2ImgAr{display: block;}
 body.light-mode .homeS2Img{display: none;}
 body.light-mode header::after,
-body.light-mode footer::before {
+body.light-mode footer::before,
+body.light-mode .cardPrice .divBtn::after {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
 }
 body.light-mode .btnBlack {
