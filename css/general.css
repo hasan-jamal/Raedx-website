@@ -630,27 +630,28 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 12px;
+  gap: 1rem;
   direction: ltr;
   margin-top: 40px;
 }
 .pagination button {
   transition: all 0.3s ease;
   background: none;
+  color: #fff;
 }
 .pagination button.active{
   border-radius: 8px;
   background: linear-gradient(154deg, #00C7B1 2.78%, #00675C 121.8%);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 .pagination button:hover{
-  color: #00C7B1;
+  font-weight: 600;
 }
 .pagination button:hover img,
 .pagination button.active img {
-  transform: scale(1.1);
 filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-rotate(120deg) brightness(84%) contrast(101%);}
+.pagination .btnImageLeft img{transform: rotate(180deg);}
 .h48px{height: 48px;}
 .h44px{height: 44px;}
 .divTitle{
@@ -732,7 +733,7 @@ filter: brightness(0) saturate(100%) invert(67%) sepia(92%) saturate(1304%) hue-
 @media (max-width:614.4px) {
   .h48px,
   .h44px{height: 40px;}
-  .pagination{gap: 6px;margin-top: 24px;}
+  .pagination{gap: 6px;margin-top: 2rem;}
   .divTitle{width: 100%;}
 }
 
